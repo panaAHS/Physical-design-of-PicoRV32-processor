@@ -1,0 +1,93 @@
+Using Power View: default_emulate_view.
+Begin Boundary Leakage Calculation
+Ended Boundary Leakage Calculation: (cpu=0:00:00, real=0:00:00,
+mem(process/total/peak)=1076.79MB/2387.47MB/1179.66MB)
+Begin Static Power Report Generation
+*----------------------------------------------------------------------------------------
+*	Innovus 19.11-s128_1 (64bit) 08/20/2019 20:54 (Linux 2.6.32-431.11.2.el6.x86_64)
+*	
+*
+* 	Date & Time:	2022-Dec-09 17:43:02 (2022-Dec-09 15:43:02 GMT)
+*
+*----------------------------------------------------------------------------------------
+*
+*	Design: picorv32
+*
+*	Liberty Libraries used:
+*	        default_emulate_view: ../../../../apps/prebuilt/eda/designkits/GPDK/gsclib045/lan/flow/t1u1/reference_libs/GPDK045/gsclib045_svt_v4.4/gsclib045/timing/fast_vdd1v0_basicCells.lib
+*
+*	Parasitic Files used:
+*
+*       Power View : default_emulate_view
+*
+*       User-Defined Activity : N.A.
+*
+*       Activity File: N.A.
+*
+*       Hierarchical Global Activity: N.A.
+*
+*       Global Activity: N.A.
+*
+*       Sequential Element Activity: 0.200000
+*
+*       Primary Input Activity: 0.200000
+*
+*       Default icg ratio: N.A.
+*
+*       Global Comb ClockGate Ratio: N.A.
+*
+*	Power Units = 1mW
+*
+*	Time Units = 1e-09 secs
+*
+*       report_power
+*
+-----------------------------------------------------------------------------------------
+*
+
+
+
+Total Power
+-----------------------------------------------------------------------------------------
+Total Internal Power:        1.04842395 	   33.5074%
+Total Switching Power:       2.07848995 	   66.4281%
+Total Leakage Power:         0.00201757 	    0.0645%
+Total Power:                 3.12893148
+-----------------------------------------------------------------------------------------
+
+
+Group                           Internal   Switching     Leakage       Total  Percentage 
+                                Power      Power         Power         Power  (%)        
+-----------------------------------------------------------------------------------------
+Sequential                        0.7067      0.1002   0.0006725      0.8076       25.81
+Macro                                  0           0           0           0           0
+IO                                     0           0           0           0           0
+Combinational                     0.3417       1.978    0.001345       2.321       74.19
+Clock (Combinational)                  0           0           0           0           0
+Clock (Sequential)                     0           0           0           0           0
+-----------------------------------------------------------------------------------------
+Total                              1.048       2.078    0.002018       3.129         100
+-----------------------------------------------------------------------------------------
+
+
+Rail                  Voltage   Internal   Switching     Leakage       Total  Percentage 
+                                Power      Power         Power         Power  (%)        
+-----------------------------------------------------------------------------------------
+VDD                       1.1      1.048       2.078    0.002018       3.129         100
+ 
+ 
+-----------------------------------------------------------------------------------------
+*	Power Distribution Summary: 
+*              Highest Average Power:   FE_OFC504_mem_la_addr_2 (CLKINVX20):           0.0135
+*              Highest Leakage Power:     FE_OFC540_pcpi_rs2_18 (BUFX20):        1.034e-06
+*                Total Cap:      1.47531e-10 F
+*                Total instances in design: 10739
+*                Total instances in design with no power:     0
+*                Total instances in design with no activty:     0
+
+*                Total Fillers and Decap:     0
+-----------------------------------------------------------------------------------------
+ 
+Ended Static Power Report Generation: (cpu=0:00:00, real=0:00:00,
+mem(process/total/peak)=1076.79MB/2387.47MB/1179.66MB)
+
