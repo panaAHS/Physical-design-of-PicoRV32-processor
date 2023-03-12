@@ -1,0 +1,4 @@
+    Hinst Name       Module Name          Inst Count           Total Area
+----------------------------------------------------------------------
+example_module_pads                            12531          6182142.264
+ picorv32_example    picorv32                  12116            33342.264

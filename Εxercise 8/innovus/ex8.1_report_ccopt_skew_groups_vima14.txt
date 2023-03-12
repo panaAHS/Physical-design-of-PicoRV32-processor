@@ -1,0 +1,207 @@
+Clock tree timing engine global stage delay update for default_emulate_delay_corner:setup.early...
+**DIAG[/icd/cm_t1nb_001/INNOVUS191/Rel/19.11/main/lnx86_64_opt/19.11-s128_1/fe/src/ccopt/netlist/wire.cpp:1959:std::vector<std::pair<Ccopt::ClockTree::ClockSink*, Ccopt::Netlist::Pin*> > Ccopt::Netlist::MultiDriverWireHelper::GetSinksForNonRepresentativeDrivers() const]: NonFatalAssert Failed: Some drivers of multi-driver net clk are not sinks in the DAG
+**DIAG[/icd/cm_t1nb_001/INNOVUS191/Rel/19.11/main/lnx86_64_opt/19.11-s128_1/fe/src/ccopt/clocktree/timing/routing.cpp:754:bool Ccopt::ClockTree::Timing::BuildRoutingEstimate(Ccopt::Route::Estimate::Estimator&, const Ccopt::ClockTree::ClockNode*, int&, std::map<int, Ccopt::ClockTree::ClockNodule>*)]: NonFatalAssert Failed: Clock tree is inconsistent with netlist! Pin pad_clk/Y is in netlist but not ACT
+Clock tree timing engine global stage delay update for default_emulate_delay_corner:setup.early done. (took cpu=0:00:00.0 real=0:00:00.0)
+Clock tree timing engine global stage delay update for default_emulate_delay_corner:setup.late...
+Clock tree timing engine global stage delay update for default_emulate_delay_corner:setup.late done. (took cpu=0:00:00.0 real=0:00:00.0)
+Clock tree timing engine global stage delay update for default_emulate_delay_corner:hold.early...
+Clock tree timing engine global stage delay update for default_emulate_delay_corner:hold.early done. (took cpu=0:00:00.0 real=0:00:00.0)
+Clock tree timing engine global stage delay update for default_emulate_delay_corner:hold.late...
+Clock tree timing engine global stage delay update for default_emulate_delay_corner:hold.late done. (took cpu=0:00:00.0 real=0:00:00.0)
+
+Skew Group Structure:
+=====================
+
+------------------------------------------------------------------------------------------
+Skew Group                             Sources    Constrained Sinks    Unconstrained Sinks
+------------------------------------------------------------------------------------------
+clk/default_emulate_constraint_mode       1             1961                    0
+------------------------------------------------------------------------------------------
+
+Skew Group Summary:
+===================
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Timing Corner                               Skew Group                             ID Target    Min ID    Max ID    Avg ID    Std.Dev. ID    Skew Target Type    Skew Target    Skew     Skew window occupancy
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+default_emulate_delay_corner:setup.early    clk/default_emulate_constraint_mode        -        0.000     0.000     0.000        0.000       ignored                  -         0.000              -
+default_emulate_delay_corner:setup.late     clk/default_emulate_constraint_mode    none         0.000     0.000     0.000        0.000       explicit             0.100         0.000    100% {0.000, 0.000}
+default_emulate_delay_corner:hold.early     clk/default_emulate_constraint_mode        -        0.000     0.000     0.000        0.000       ignored                  -         0.000              -
+default_emulate_delay_corner:hold.late      clk/default_emulate_constraint_mode        -        0.000     0.000     0.000        0.000       ignored                  -         0.000              -
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+* - indicates that target was not met.
+
+Skew Group Min/Max path pins:
+=============================
+
+-----------------------------------------------------------------------------------------------------------------------
+Timing Corner                               Skew Group                             Min ID    PathID    Max ID    PathID
+-----------------------------------------------------------------------------------------------------------------------
+default_emulate_delay_corner:setup.early    clk/default_emulate_constraint_mode    0.000       1       0.000       2
+-    min picorv32_example/genblk1.pcpi_mul_rs2_reg[0]/CK
+-    max picorv32_example/genblk1.pcpi_mul_rs2_reg[0]/CK
+default_emulate_delay_corner:setup.late     clk/default_emulate_constraint_mode    0.000       3       0.000       4
+-    min picorv32_example/genblk1.pcpi_mul_rs2_reg[0]/CK
+-    max picorv32_example/genblk1.pcpi_mul_rs2_reg[0]/CK
+default_emulate_delay_corner:hold.early     clk/default_emulate_constraint_mode    0.000       5       0.000       6
+-    min picorv32_example/genblk1.pcpi_mul_rs2_reg[0]/CK
+-    max picorv32_example/genblk1.pcpi_mul_rs2_reg[0]/CK
+default_emulate_delay_corner:hold.late      clk/default_emulate_constraint_mode    0.000       7       0.000       8
+-    min picorv32_example/genblk1.pcpi_mul_rs2_reg[0]/CK
+-    max picorv32_example/genblk1.pcpi_mul_rs2_reg[0]/CK
+-----------------------------------------------------------------------------------------------------------------------
+
+Timing for timing corner default_emulate_delay_corner:setup.early, min clock_path:
+==================================================================================
+
+PathID    : 1
+Path type : skew group clk/default_emulate_constraint_mode (path 1 of 1)
+Start     : clk
+End       : picorv32_example/genblk1.pcpi_mul_rs2_reg[0]/CK
+Delay     : 0.000
+
+--------------------------------------------------------------------------------------------------
+Name  Lib cell  Event  Incr   Arrival  Slew   Cap    Location             Distance  Fanout  Status
+                       (ns)   (ns)     (ns)   (pF)                        (um)              
+-- Clockpath trace -------------------------------------------------------------------------------
+clk
+-     -         rise   -       0.000   0.004  0.000  (421.280,7450.610)   -          1961   
+picorv32_example/genblk1.pcpi_mul_rs2_reg[0]/CK
+-     DFFX1     rise   0.000   0.000   0.004  -      (3214.285,7284.080)  2959.535  -       
+--------------------------------------------------------------------------------------------------
+
+Timing for timing corner default_emulate_delay_corner:setup.early, max clock_path:
+==================================================================================
+
+PathID    : 2
+Path type : skew group clk/default_emulate_constraint_mode (path 1 of 1)
+Start     : clk
+End       : picorv32_example/genblk2.pcpi_div_instr_divu_reg/CK
+Delay     : 0.000
+
+--------------------------------------------------------------------------------------------------
+Name  Lib cell  Event  Incr   Arrival  Slew   Cap    Location             Distance  Fanout  Status
+                       (ns)   (ns)     (ns)   (pF)                        (um)              
+-- Clockpath trace -------------------------------------------------------------------------------
+clk
+-     -         rise   -       0.000   0.004  0.000  (421.280,7450.610)   -          1961   
+picorv32_example/genblk2.pcpi_div_instr_divu_reg/CK
+-     DFFHQX1   rise   0.000   0.000   0.004  -      (2845.075,7338.590)  2535.815  -       
+--------------------------------------------------------------------------------------------------
+
+Timing for timing corner default_emulate_delay_corner:setup.late, min clock_path:
+=================================================================================
+
+PathID    : 3
+Path type : skew group clk/default_emulate_constraint_mode (path 1 of 1)
+Start     : clk
+End       : picorv32_example/genblk1.pcpi_mul_rs2_reg[0]/CK
+Delay     : 0.000
+
+--------------------------------------------------------------------------------------------------
+Name  Lib cell  Event  Incr   Arrival  Slew   Cap    Location             Distance  Fanout  Status
+                       (ns)   (ns)     (ns)   (pF)                        (um)              
+-- Clockpath trace -------------------------------------------------------------------------------
+clk
+-     -         rise   -       0.000   0.004  0.000  (421.280,7450.610)   -          1961   
+picorv32_example/genblk1.pcpi_mul_rs2_reg[0]/CK
+-     DFFX1     rise   0.000   0.000   0.004  -      (3214.285,7284.080)  2959.535  -       
+--------------------------------------------------------------------------------------------------
+
+Timing for timing corner default_emulate_delay_corner:setup.late, max clock_path:
+=================================================================================
+
+PathID    : 4
+Path type : skew group clk/default_emulate_constraint_mode (path 1 of 1)
+Start     : clk
+End       : picorv32_example/genblk2.pcpi_div_instr_divu_reg/CK
+Delay     : 0.000
+
+--------------------------------------------------------------------------------------------------
+Name  Lib cell  Event  Incr   Arrival  Slew   Cap    Location             Distance  Fanout  Status
+                       (ns)   (ns)     (ns)   (pF)                        (um)              
+-- Clockpath trace -------------------------------------------------------------------------------
+clk
+-     -         rise   -       0.000   0.004  0.000  (421.280,7450.610)   -          1961   
+picorv32_example/genblk2.pcpi_div_instr_divu_reg/CK
+-     DFFHQX1   rise   0.000   0.000   0.004  -      (2845.075,7338.590)  2535.815  -       
+--------------------------------------------------------------------------------------------------
+
+Timing for timing corner default_emulate_delay_corner:hold.early, min clock_path:
+=================================================================================
+
+PathID    : 5
+Path type : skew group clk/default_emulate_constraint_mode (path 1 of 1)
+Start     : clk
+End       : picorv32_example/genblk1.pcpi_mul_rs2_reg[0]/CK
+Delay     : 0.000
+
+--------------------------------------------------------------------------------------------------
+Name  Lib cell  Event  Incr   Arrival  Slew   Cap    Location             Distance  Fanout  Status
+                       (ns)   (ns)     (ns)   (pF)                        (um)              
+-- Clockpath trace -------------------------------------------------------------------------------
+clk
+-     -         rise   -       0.000   0.004  0.000  (421.280,7450.610)   -          1961   
+picorv32_example/genblk1.pcpi_mul_rs2_reg[0]/CK
+-     DFFX1     rise   0.000   0.000   0.004  -      (3214.285,7284.080)  2959.535  -       
+--------------------------------------------------------------------------------------------------
+
+Timing for timing corner default_emulate_delay_corner:hold.early, max clock_path:
+=================================================================================
+
+PathID    : 6
+Path type : skew group clk/default_emulate_constraint_mode (path 1 of 1)
+Start     : clk
+End       : picorv32_example/genblk2.pcpi_div_instr_divu_reg/CK
+Delay     : 0.000
+
+--------------------------------------------------------------------------------------------------
+Name  Lib cell  Event  Incr   Arrival  Slew   Cap    Location             Distance  Fanout  Status
+                       (ns)   (ns)     (ns)   (pF)                        (um)              
+-- Clockpath trace -------------------------------------------------------------------------------
+clk
+-     -         rise   -       0.000   0.004  0.000  (421.280,7450.610)   -          1961   
+picorv32_example/genblk2.pcpi_div_instr_divu_reg/CK
+-     DFFHQX1   rise   0.000   0.000   0.004  -      (2845.075,7338.590)  2535.815  -       
+--------------------------------------------------------------------------------------------------
+
+Timing for timing corner default_emulate_delay_corner:hold.late, min clock_path:
+================================================================================
+
+PathID    : 7
+Path type : skew group clk/default_emulate_constraint_mode (path 1 of 1)
+Start     : clk
+End       : picorv32_example/genblk1.pcpi_mul_rs2_reg[0]/CK
+Delay     : 0.000
+
+--------------------------------------------------------------------------------------------------
+Name  Lib cell  Event  Incr   Arrival  Slew   Cap    Location             Distance  Fanout  Status
+                       (ns)   (ns)     (ns)   (pF)                        (um)              
+-- Clockpath trace -------------------------------------------------------------------------------
+clk
+-     -         rise   -       0.000   0.004  0.000  (421.280,7450.610)   -          1961   
+picorv32_example/genblk1.pcpi_mul_rs2_reg[0]/CK
+-     DFFX1     rise   0.000   0.000   0.004  -      (3214.285,7284.080)  2959.535  -       
+--------------------------------------------------------------------------------------------------
+
+Timing for timing corner default_emulate_delay_corner:hold.late, max clock_path:
+================================================================================
+
+PathID    : 8
+Path type : skew group clk/default_emulate_constraint_mode (path 1 of 1)
+Start     : clk
+End       : picorv32_example/genblk2.pcpi_div_instr_divu_reg/CK
+Delay     : 0.000
+
+--------------------------------------------------------------------------------------------------
+Name  Lib cell  Event  Incr   Arrival  Slew   Cap    Location             Distance  Fanout  Status
+                       (ns)   (ns)     (ns)   (pF)                        (um)              
+-- Clockpath trace -------------------------------------------------------------------------------
+clk
+-     -         rise   -       0.000   0.004  0.000  (421.280,7450.610)   -          1961   
+picorv32_example/genblk2.pcpi_div_instr_divu_reg/CK
+-     DFFHQX1   rise   0.000   0.000   0.004  -      (2845.075,7338.590)  2535.815  -       
+--------------------------------------------------------------------------------------------------
+
+

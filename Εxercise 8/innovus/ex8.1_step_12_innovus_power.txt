@@ -1,0 +1,232 @@
+
+Power Net Detected:
+    Voltage	    Name
+    0.00V	    VSS
+    1.10V	    VDD
+Using Power View: default_emulate_view.
+
+Begin Power Analysis
+
+    0.00V	    VSS
+    1.10V	    VDD
+
+Begin Processing Timing Library for Power Calculation
+
+Begin Processing Timing Library for Power Calculation
+
+
+
+Begin Processing Power Net/Grid for Power Calculation
+
+Ended Processing Power Net/Grid for Power Calculation: (cpu=0:00:00, real=0:00:00, mem(process/total/peak)=2314.64MB/4410.50MB/7484.71MB)
+
+Begin Processing Timing Window Data for Power Calculation
+
+clk(100MHz) CK: assigning clock clk to net clk
+Ended Processing Timing Window Data for Power Calculation: (cpu=0:00:00, real=0:00:00, mem(process/total/peak)=2315.52MB/4410.50MB/7484.71MB)
+
+Begin Processing User Attributes
+
+Ended Processing User Attributes: (cpu=0:00:00, real=0:00:00, mem(process/total/peak)=2315.57MB/4410.50MB/7484.71MB)
+
+Begin Processing Signal Activity
+
+
+Starting Levelizing
+2023-Jan-21 17:38:46 (2023-Jan-21 15:38:46 GMT)
+2023-Jan-21 17:38:46 (2023-Jan-21 15:38:46 GMT): 10%
+2023-Jan-21 17:38:46 (2023-Jan-21 15:38:46 GMT): 20%
+2023-Jan-21 17:38:46 (2023-Jan-21 15:38:46 GMT): 30%
+2023-Jan-21 17:38:46 (2023-Jan-21 15:38:46 GMT): 40%
+2023-Jan-21 17:38:46 (2023-Jan-21 15:38:46 GMT): 50%
+2023-Jan-21 17:38:46 (2023-Jan-21 15:38:46 GMT): 60%
+2023-Jan-21 17:38:46 (2023-Jan-21 15:38:46 GMT): 70%
+2023-Jan-21 17:38:46 (2023-Jan-21 15:38:46 GMT): 80%
+2023-Jan-21 17:38:46 (2023-Jan-21 15:38:46 GMT): 90%
+
+Finished Levelizing
+2023-Jan-21 17:38:46 (2023-Jan-21 15:38:46 GMT)
+
+Starting Activity Propagation
+2023-Jan-21 17:38:46 (2023-Jan-21 15:38:46 GMT)
+2023-Jan-21 17:38:46 (2023-Jan-21 15:38:46 GMT): 10%
+** INFO:  (VOLTUS_POWR-1356): No default input activity has been set. Defaulting to 0.2.
+Use 'set_default_switching_activity -input_activity' command to change the default activity value.
+
+2023-Jan-21 17:38:46 (2023-Jan-21 15:38:46 GMT): 20%
+
+Finished Activity Propagation
+2023-Jan-21 17:38:46 (2023-Jan-21 15:38:46 GMT)
+Ended Processing Signal Activity: (cpu=0:00:00, real=0:00:00, mem(process/total/peak)=2316.11MB/4410.50MB/7484.71MB)
+
+Begin Power Computation
+
+      ----------------------------------------------------------
+      # of cell(s) missing both power/leakage table: 0
+      # of cell(s) missing power table: 0
+      # of cell(s) missing leakage table: 0
+      # of MSMV cell(s) missing power_level: 0
+      ----------------------------------------------------------
+
+
+
+Starting Calculating power
+2023-Jan-21 17:38:46 (2023-Jan-21 15:38:46 GMT)
+ ... Calculating switching power
+2023-Jan-21 17:38:46 (2023-Jan-21 15:38:46 GMT): 10%
+2023-Jan-21 17:38:46 (2023-Jan-21 15:38:46 GMT): 20%
+2023-Jan-21 17:38:46 (2023-Jan-21 15:38:46 GMT): 30%
+2023-Jan-21 17:38:46 (2023-Jan-21 15:38:46 GMT): 40%
+2023-Jan-21 17:38:46 (2023-Jan-21 15:38:46 GMT): 50%
+ ... Calculating internal and leakage power
+2023-Jan-21 17:38:46 (2023-Jan-21 15:38:46 GMT): 60%
+2023-Jan-21 17:38:47 (2023-Jan-21 15:38:47 GMT): 70%
+2023-Jan-21 17:38:47 (2023-Jan-21 15:38:47 GMT): 80%
+2023-Jan-21 17:38:47 (2023-Jan-21 15:38:47 GMT): 90%
+
+Finished Calculating power
+2023-Jan-21 17:38:47 (2023-Jan-21 15:38:47 GMT)
+Ended Power Computation: (cpu=0:00:01, real=0:00:01, mem(process/total/peak)=2316.58MB/4410.50MB/7484.71MB)
+
+Begin Processing User Attributes
+
+Ended Processing User Attributes: (cpu=0:00:00, real=0:00:00, mem(process/total/peak)=2316.58MB/4410.50MB/7484.71MB)
+
+Ended Power Analysis: (cpu=0:00:02, real=0:00:02, mem(process/total/peak)=2316.64MB/4410.50MB/7484.71MB)
+
+Begin Boundary Leakage Calculation
+Ended Boundary Leakage Calculation: (cpu=0:00:00, real=0:00:00,
+mem(process/total/peak)=2316.65MB/4410.50MB/7484.71MB)
+Begin Static Power Report Generation
+*----------------------------------------------------------------------------------------
+*	Innovus 19.11-s128_1 (64bit) 08/20/2019 20:54 (Linux 2.6.32-431.11.2.el6.x86_64)
+*	
+*
+* 	Date & Time:	2023-Jan-21 17:38:47 (2023-Jan-21 15:38:47 GMT)
+*
+*----------------------------------------------------------------------------------------
+*
+*	Design: example_module_pads
+*
+*	Liberty Libraries used:
+*	        default_emulate_view: ../../../../apps/prebuilt/eda/designkits/GPDK/gsclib045/lan/flow/t1u1/reference_libs/GPDK045/gsclib045_svt_v4.4/gsclib045/timing/fast_vdd1v0_basicCells.lib
+*
+*	Parasitic Files used:
+*
+*       Power View : default_emulate_view
+*
+*       User-Defined Activity : N.A.
+*
+*       Activity File: N.A.
+*
+*       Hierarchical Global Activity: N.A.
+*
+*       Global Activity: N.A.
+*
+*       Sequential Element Activity: 0.200000
+*
+*       Primary Input Activity: 0.200000
+*
+*       Default icg ratio: N.A.
+*
+*       Global Comb ClockGate Ratio: N.A.
+*
+*	Power Units = 1mW
+*
+*	Time Units = 1e-09 secs
+*
+*       report_power
+*
+-----------------------------------------------------------------------------------------
+  112 instances have no static power
+** WARN:  (VOLTUS_POWR-2152): Instance pad_vss (PADVSS) has no static power. 
+
+** WARN:  (VOLTUS_POWR-2152): Instance pad_vdd (PADVDD) has no static power. 
+
+** WARN:  (VOLTUS_POWR-2152): Instance pad_clk (PADDB) has no static power. 
+
+** WARN:  (VOLTUS_POWR-2152): Instance pad_trace_valid (PADDB) has no static power. 
+
+** WARN:  (VOLTUS_POWR-2152): Instance pad_irq0 (PADDB) has no static power. 
+
+** WARN:  (VOLTUS_POWR-2152): Instance pad_irq1 (PADDB) has no static power. 
+
+** WARN:  (VOLTUS_POWR-2152): Instance pad_irq2 (PADDB) has no static power. 
+
+** WARN:  (VOLTUS_POWR-2152): Instance pad_irq3 (PADDB) has no static power. 
+
+** WARN:  (VOLTUS_POWR-2152): Instance pad_irq4 (PADDB) has no static power. 
+
+** WARN:  (VOLTUS_POWR-2152): Instance pad_irq5 (PADDB) has no static power. 
+
+** WARN:  (VOLTUS_POWR-2152): Instance pad_irq6 (PADDB) has no static power. 
+
+** WARN:  (VOLTUS_POWR-2152): Instance pad_irq7 (PADDB) has no static power. 
+
+** WARN:  (VOLTUS_POWR-2152): Instance pad_irq8 (PADDB) has no static power. 
+
+** WARN:  (VOLTUS_POWR-2152): Instance pad_irq9 (PADDB) has no static power. 
+
+** WARN:  (VOLTUS_POWR-2152): Instance pad_irq10 (PADDB) has no static power. 
+
+** WARN:  (VOLTUS_POWR-2152): Instance pad_irq11 (PADDB) has no static power. 
+
+** WARN:  (VOLTUS_POWR-2152): Instance pad_irq12 (PADDB) has no static power. 
+
+** WARN:  (VOLTUS_POWR-2152): Instance pad_irq13 (PADDB) has no static power. 
+
+** WARN:  (VOLTUS_POWR-2152): Instance pad_irq14 (PADDB) has no static power. 
+
+** WARN:  (VOLTUS_POWR-2152): Instance pad_irq15 (PADDB) has no static power. 
+
+** WARN:  (EMS-27): Message (VOLTUS_POWR-2152) has exceeded the current message display limit of 20.
+To increase the message display limit, refer to the product command reference manual.
+
+*
+
+
+
+Total Power
+-----------------------------------------------------------------------------------------
+Total Internal Power:        1.13811810 	   25.5935%
+Total Switching Power:       3.30650031 	   74.3550%
+Total Leakage Power:         0.00229022 	    0.0515%
+Total Power:                 4.44690864
+-----------------------------------------------------------------------------------------
+
+
+Group                           Internal   Switching     Leakage       Total  Percentage 
+                                Power      Power         Power         Power  (%)        
+-----------------------------------------------------------------------------------------
+Sequential                        0.7112      0.1185   0.0006725      0.8303       18.67
+Macro                                  0      0.8556           0      0.8556       19.24
+IO                                     0           0           0           0           0
+Combinational                      0.427       2.332    0.001618       2.761       62.09
+Clock (Combinational)                  0           0           0           0           0
+Clock (Sequential)                     0           0           0           0           0
+-----------------------------------------------------------------------------------------
+Total                              1.138       3.307     0.00229       4.447         100
+-----------------------------------------------------------------------------------------
+
+
+Rail                  Voltage   Internal   Switching     Leakage       Total  Percentage 
+                                Power      Power         Power         Power  (%)        
+-----------------------------------------------------------------------------------------
+VDD                       1.1      1.138       3.307     0.00229       4.447         100
+ 
+ 
+-----------------------------------------------------------------------------------------
+*	Power Distribution Summary: 
+*              Highest Average Power: picorv32_example/fopt187708 (BUFX20):          0.00724
+*              Highest Leakage Power: picorv32_example/fopt184451 (BUFX20):        1.034e-06
+*                Total Cap:      2.39692e-10 F
+*                Total instances in design: 12531
+*                Total instances in design with no power:   112
+*                Total instances in design with no activty:    79
+
+*                Total Fillers and Decap:   112
+-----------------------------------------------------------------------------------------
+ 
+Ended Static Power Report Generation: (cpu=0:00:00, real=0:00:00,
+mem(process/total/peak)=2320.27MB/4410.50MB/7484.71MB)
+

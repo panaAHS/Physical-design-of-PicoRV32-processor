@@ -1,0 +1,753 @@
+Using Power View: default_emulate_view.
+AAE DB initialization (MEM=4485.75 CPU=0:00:00.2 REAL=0:00:00.0) 
+Starting SI iteration 1 using Infinite Timing Windows
+#################################################################################
+# Design Stage: PostRoute
+# Design Name: example_module_pads
+# Design Mode: 45nm
+# Analysis Mode: MMMC Non-OCV 
+# Parasitics Mode: No SPEF/RCDB
+# Signoff Settings: SI On 
+#################################################################################
+#WARNING (NRIG-34) Power/Ground pin VSSIOR of instance pad_clk is not connected to any power/ground net. Use command globalNetConnect to connect the power/ground pin to a power/ground net.
+#WARNING (NRIG-34) Power/Ground pin VDDIOR of instance pad_clk is not connected to any power/ground net. Use command globalNetConnect to connect the power/ground pin to a power/ground net.
+#WARNING (NRIG-34) Power/Ground pin VSSIOR of instance pad_resetn is not connected to any power/ground net. Use command globalNetConnect to connect the power/ground pin to a power/ground net.
+#WARNING (NRIG-34) Power/Ground pin VDDIOR of instance pad_resetn is not connected to any power/ground net. Use command globalNetConnect to connect the power/ground pin to a power/ground net.
+#WARNING (NRIG-34) Power/Ground pin VSSIOR of instance pad_trap is not connected to any power/ground net. Use command globalNetConnect to connect the power/ground pin to a power/ground net.
+#WARNING (NRIG-34) Power/Ground pin VDDIOR of instance pad_trap is not connected to any power/ground net. Use command globalNetConnect to connect the power/ground pin to a power/ground net.
+#WARNING (NRIG-34) Power/Ground pin VSSIOR of instance pad_mem_ready is not connected to any power/ground net. Use command globalNetConnect to connect the power/ground pin to a power/ground net.
+#WARNING (NRIG-34) Power/Ground pin VDDIOR of instance pad_mem_ready is not connected to any power/ground net. Use command globalNetConnect to connect the power/ground pin to a power/ground net.
+#WARNING (NRIG-34) Power/Ground pin VSSIOR of instance pad_pcpi_wr is not connected to any power/ground net. Use command globalNetConnect to connect the power/ground pin to a power/ground net.
+#WARNING (NRIG-34) Power/Ground pin VDDIOR of instance pad_pcpi_wr is not connected to any power/ground net. Use command globalNetConnect to connect the power/ground pin to a power/ground net.
+#WARNING (NRIG-34) Power/Ground pin VSSIOR of instance pad_pcpi_wait is not connected to any power/ground net. Use command globalNetConnect to connect the power/ground pin to a power/ground net.
+#WARNING (NRIG-34) Power/Ground pin VDDIOR of instance pad_pcpi_wait is not connected to any power/ground net. Use command globalNetConnect to connect the power/ground pin to a power/ground net.
+#WARNING (NRIG-34) Power/Ground pin VSSIOR of instance pad_pcpi_ready is not connected to any power/ground net. Use command globalNetConnect to connect the power/ground pin to a power/ground net.
+#WARNING (NRIG-34) Power/Ground pin VDDIOR of instance pad_pcpi_ready is not connected to any power/ground net. Use command globalNetConnect to connect the power/ground pin to a power/ground net.
+#WARNING (NRIG-34) Power/Ground pin VSSIOR of instance pad_mem_valid is not connected to any power/ground net. Use command globalNetConnect to connect the power/ground pin to a power/ground net.
+#WARNING (NRIG-34) Power/Ground pin VDDIOR of instance pad_mem_valid is not connected to any power/ground net. Use command globalNetConnect to connect the power/ground pin to a power/ground net.
+#WARNING (NRIG-34) Power/Ground pin VSSIOR of instance pad_mem_instr is not connected to any power/ground net. Use command globalNetConnect to connect the power/ground pin to a power/ground net.
+#WARNING (NRIG-34) Power/Ground pin VDDIOR of instance pad_mem_instr is not connected to any power/ground net. Use command globalNetConnect to connect the power/ground pin to a power/ground net.
+#WARNING (NRIG-34) Power/Ground pin VSSIOR of instance pad_mem_la_read is not connected to any power/ground net. Use command globalNetConnect to connect the power/ground pin to a power/ground net.
+#WARNING (NRIG-34) Power/Ground pin VDDIOR of instance pad_mem_la_read is not connected to any power/ground net. Use command globalNetConnect to connect the power/ground pin to a power/ground net.
+#WARNING (EMS-27) Message (NRIG-34) has exceeded the current message display limit of 20.
+#To increase the message display limit, refer to the product command reference manual.
+#WARNING (NRIG-39) NanoRoute cannot route to pin PIN/clk of net clk because it might be a logical pin and does not have physical shapes. To fix the problem, check the pin connection in the netlist and ensure the pin shapes exist in the floorplan.
+#WARNING (NRIG-39) NanoRoute cannot route to pin PIN/resetn of net resetn because it might be a logical pin and does not have physical shapes. To fix the problem, check the pin connection in the netlist and ensure the pin shapes exist in the floorplan.
+#WARNING (NRIG-39) NanoRoute cannot route to pin PIN/mem_ready of net mem_ready because it might be a logical pin and does not have physical shapes. To fix the problem, check the pin connection in the netlist and ensure the pin shapes exist in the floorplan.
+#WARNING (NRIG-39) NanoRoute cannot route to pin PIN/pcpi_wr of net pcpi_wr because it might be a logical pin and does not have physical shapes. To fix the problem, check the pin connection in the netlist and ensure the pin shapes exist in the floorplan.
+#WARNING (NRIG-39) NanoRoute cannot route to pin PIN/pcpi_wait of net pcpi_wait because it might be a logical pin and does not have physical shapes. To fix the problem, check the pin connection in the netlist and ensure the pin shapes exist in the floorplan.
+#WARNING (NRIG-39) NanoRoute cannot route to pin PIN/pcpi_ready of net pcpi_ready because it might be a logical pin and does not have physical shapes. To fix the problem, check the pin connection in the netlist and ensure the pin shapes exist in the floorplan.
+#WARNING (NRIG-39) NanoRoute cannot route to pin PIN/mem_rdata[31] of net mem_rdata[31] because it might be a logical pin and does not have physical shapes. To fix the problem, check the pin connection in the netlist and ensure the pin shapes exist in the floorplan.
+#WARNING (NRIG-39) NanoRoute cannot route to pin PIN/mem_rdata[30] of net mem_rdata[30] because it might be a logical pin and does not have physical shapes. To fix the problem, check the pin connection in the netlist and ensure the pin shapes exist in the floorplan.
+#WARNING (NRIG-39) NanoRoute cannot route to pin PIN/mem_rdata[29] of net mem_rdata[29] because it might be a logical pin and does not have physical shapes. To fix the problem, check the pin connection in the netlist and ensure the pin shapes exist in the floorplan.
+#WARNING (NRIG-39) NanoRoute cannot route to pin PIN/mem_rdata[28] of net mem_rdata[28] because it might be a logical pin and does not have physical shapes. To fix the problem, check the pin connection in the netlist and ensure the pin shapes exist in the floorplan.
+#WARNING (NRIG-39) NanoRoute cannot route to pin PIN/mem_rdata[27] of net mem_rdata[27] because it might be a logical pin and does not have physical shapes. To fix the problem, check the pin connection in the netlist and ensure the pin shapes exist in the floorplan.
+#WARNING (NRIG-39) NanoRoute cannot route to pin PIN/mem_rdata[26] of net mem_rdata[26] because it might be a logical pin and does not have physical shapes. To fix the problem, check the pin connection in the netlist and ensure the pin shapes exist in the floorplan.
+#WARNING (NRIG-39) NanoRoute cannot route to pin PIN/mem_rdata[25] of net mem_rdata[25] because it might be a logical pin and does not have physical shapes. To fix the problem, check the pin connection in the netlist and ensure the pin shapes exist in the floorplan.
+#WARNING (NRIG-39) NanoRoute cannot route to pin PIN/mem_rdata[24] of net mem_rdata[24] because it might be a logical pin and does not have physical shapes. To fix the problem, check the pin connection in the netlist and ensure the pin shapes exist in the floorplan.
+#WARNING (NRIG-39) NanoRoute cannot route to pin PIN/mem_rdata[23] of net mem_rdata[23] because it might be a logical pin and does not have physical shapes. To fix the problem, check the pin connection in the netlist and ensure the pin shapes exist in the floorplan.
+#WARNING (NRIG-39) NanoRoute cannot route to pin PIN/mem_rdata[22] of net mem_rdata[22] because it might be a logical pin and does not have physical shapes. To fix the problem, check the pin connection in the netlist and ensure the pin shapes exist in the floorplan.
+#WARNING (NRIG-39) NanoRoute cannot route to pin PIN/mem_rdata[21] of net mem_rdata[21] because it might be a logical pin and does not have physical shapes. To fix the problem, check the pin connection in the netlist and ensure the pin shapes exist in the floorplan.
+#WARNING (NRIG-39) NanoRoute cannot route to pin PIN/mem_rdata[20] of net mem_rdata[20] because it might be a logical pin and does not have physical shapes. To fix the problem, check the pin connection in the netlist and ensure the pin shapes exist in the floorplan.
+#WARNING (NRIG-39) NanoRoute cannot route to pin PIN/mem_rdata[19] of net mem_rdata[19] because it might be a logical pin and does not have physical shapes. To fix the problem, check the pin connection in the netlist and ensure the pin shapes exist in the floorplan.
+#WARNING (NRIG-39) NanoRoute cannot route to pin PIN/mem_rdata[18] of net mem_rdata[18] because it might be a logical pin and does not have physical shapes. To fix the problem, check the pin connection in the netlist and ensure the pin shapes exist in the floorplan.
+#WARNING (EMS-27) Message (NRIG-39) has exceeded the current message display limit of 20.
+#To increase the message display limit, refer to the product command reference manual.
+#num needed restored net=0
+#need_extraction net=0 (total=13161)
+#WARNING (NRDB-733) PIN clk in CELL_VIEW example_module_pads does not have physical port.
+#WARNING (NRDB-733) PIN eoi[0] in CELL_VIEW example_module_pads does not have physical port.
+#WARNING (NRDB-733) PIN eoi[10] in CELL_VIEW example_module_pads does not have physical port.
+#WARNING (NRDB-733) PIN eoi[11] in CELL_VIEW example_module_pads does not have physical port.
+#WARNING (NRDB-733) PIN eoi[12] in CELL_VIEW example_module_pads does not have physical port.
+#WARNING (NRDB-733) PIN eoi[13] in CELL_VIEW example_module_pads does not have physical port.
+#WARNING (NRDB-733) PIN eoi[14] in CELL_VIEW example_module_pads does not have physical port.
+#WARNING (NRDB-733) PIN eoi[15] in CELL_VIEW example_module_pads does not have physical port.
+#WARNING (NRDB-733) PIN eoi[16] in CELL_VIEW example_module_pads does not have physical port.
+#WARNING (NRDB-733) PIN eoi[17] in CELL_VIEW example_module_pads does not have physical port.
+#WARNING (NRDB-733) PIN eoi[18] in CELL_VIEW example_module_pads does not have physical port.
+#WARNING (NRDB-733) PIN eoi[19] in CELL_VIEW example_module_pads does not have physical port.
+#WARNING (NRDB-733) PIN eoi[1] in CELL_VIEW example_module_pads does not have physical port.
+#WARNING (NRDB-733) PIN eoi[20] in CELL_VIEW example_module_pads does not have physical port.
+#WARNING (NRDB-733) PIN eoi[21] in CELL_VIEW example_module_pads does not have physical port.
+#WARNING (NRDB-733) PIN eoi[22] in CELL_VIEW example_module_pads does not have physical port.
+#WARNING (NRDB-733) PIN eoi[23] in CELL_VIEW example_module_pads does not have physical port.
+#WARNING (NRDB-733) PIN eoi[24] in CELL_VIEW example_module_pads does not have physical port.
+#WARNING (NRDB-733) PIN eoi[25] in CELL_VIEW example_module_pads does not have physical port.
+#WARNING (NRDB-733) PIN eoi[26] in CELL_VIEW example_module_pads does not have physical port.
+#WARNING (EMS-27) Message (NRDB-733) has exceeded the current message display limit of 20.
+#To increase the message display limit, refer to the product command reference manual.
+#Start routing data preparation on Sat Jan 21 18:44:40 2023
+#
+#Minimum voltage of a net in the design = 0.000.
+#Maximum voltage of a net in the design = 3.300.
+#Voltage range [0.000 - 1.100] has 13086 nets.
+#Voltage range [0.000 - 0.000] has 74 nets.
+#Voltage range [1.100 - 3.300] has 1 net.
+# Metal1       H   Track-Pitch = 0.19000    Line-2-Via Pitch = 0.13000
+# Metal2       V   Track-Pitch = 0.20000    Line-2-Via Pitch = 0.15000
+# Metal3       H   Track-Pitch = 0.19000    Line-2-Via Pitch = 0.15000
+# Metal4       V   Track-Pitch = 0.20000    Line-2-Via Pitch = 0.15000
+# Metal5       H   Track-Pitch = 0.19000    Line-2-Via Pitch = 0.15000
+# Metal6       V   Track-Pitch = 0.20000    Line-2-Via Pitch = 0.15000
+# Metal7       H   Track-Pitch = 0.19000    Line-2-Via Pitch = 0.15000
+# Metal8       V   Track-Pitch = 0.20000    Line-2-Via Pitch = 0.15000
+# Metal9       H   Track-Pitch = 0.19000    Line-2-Via Pitch = 0.15000
+# Metal10      V   Track-Pitch = 0.50000    Line-2-Via Pitch = 0.42000
+# Metal11      H   Track-Pitch = 0.47500    Line-2-Via Pitch = 0.43000
+#Regenerating Ggrids automatically.
+#Auto generating G-grids with size=15 tracks, using layer Metal3's pitch = 0.19000.
+#Using automatically generated G-grids.
+#Done routing data preparation.
+#cpu time = 00:00:01, elapsed time = 00:00:01, memory = 2079.42 (MB), peak = 12683.77 (MB)
+#Extract in post route mode
+#
+#Start tQuantus RC extraction...
+#Start building rc corner(s)...
+#Number of RC Corner = 1
+#Corner default_emulate_rc_corner /mnt/apps/prebuilt/EDA/designkits/GPDK/gsclib045/lan/flow/t1u1/reference_libs/GPDK045/gsclib045_svt_v4.4/gsclib045/qrc/qx/gpdk045.tch 0.000000 (real) 
+#METAL_1 -> Metal1 (1)
+#METAL_2 -> Metal2 (2)
+#METAL_3 -> Metal3 (3)
+#METAL_4 -> Metal4 (4)
+#METAL_5 -> Metal5 (5)
+#METAL_6 -> Metal6 (6)
+#METAL_7 -> Metal7 (7)
+#METAL_8 -> Metal8 (8)
+#METAL_9 -> Metal9 (9)
+#METAL_10 -> Metal10 (10)
+#METAL_11 -> Metal11 (11)
+#SADV_On
+# Corner(s) : 
+#default_emulate_rc_corner [ 0.00]
+# Corner id: 0
+# Layout Scale: 1.000000
+# Has Metal Fill model: yes
+# Temperature was set
+# Temperature : 0.000000
+# Ref. Temp   : 25.000000
+#SADV_Off
+#total pattern=286 [11, 792]
+#Reading previously stored rc_model file ( rc_model.bin ) ...
+#found CAPMODEL /mnt/apps/prebuilt/EDA/designkits/GPDK/gsclib045/lan/flow/t1u1/reference_libs/GPDK045/gsclib045_svt_v4.4/gsclib045/qrc/qx/gpdk045.tch by matching corner name
+#found RESMODEL /mnt/apps/prebuilt/EDA/designkits/GPDK/gsclib045/lan/flow/t1u1/reference_libs/GPDK045/gsclib045_svt_v4.4/gsclib045/qrc/qx/gpdk045.tch 0.000000 by matching corner name
+#number model r/c [1,1] [11,792] read
+#0 rcmodel(s) requires rebuild
+#Build RC corners: cpu time = 00:00:01, elapsed time = 00:00:02, memory = 2101.65 (MB), peak = 12683.77 (MB)
+#Start building rc corner(s)...
+#Number of RC Corner = 1
+#Corner default_emulate_rc_corner /mnt/apps/prebuilt/EDA/designkits/GPDK/gsclib045/lan/flow/t1u1/reference_libs/GPDK045/gsclib045_svt_v4.4/gsclib045/qrc/qx/gpdk045.tch 0.000000 (real) 
+#METAL_1 -> Metal1 (1)
+#METAL_2 -> Metal2 (2)
+#METAL_3 -> Metal3 (3)
+#METAL_4 -> Metal4 (4)
+#METAL_5 -> Metal5 (5)
+#METAL_6 -> Metal6 (6)
+#METAL_7 -> Metal7 (7)
+#METAL_8 -> Metal8 (8)
+#METAL_9 -> Metal9 (9)
+#METAL_10 -> Metal10 (10)
+#METAL_11 -> Metal11 (11)
+#SADV_On
+# Corner(s) : 
+#default_emulate_rc_corner [ 0.00]
+# Corner id: 0
+# Layout Scale: 1.000000
+# Has Metal Fill model: yes
+# Temperature was set
+# Temperature : 0.000000
+# Ref. Temp   : 25.000000
+#SADV_Off
+#total pattern=286 [11, 792]
+#Reading previously stored rc_model file ( rc_model.bin ) ...
+#found CAPMODEL /mnt/apps/prebuilt/EDA/designkits/GPDK/gsclib045/lan/flow/t1u1/reference_libs/GPDK045/gsclib045_svt_v4.4/gsclib045/qrc/qx/gpdk045.tch by matching corner name
+#found RESMODEL /mnt/apps/prebuilt/EDA/designkits/GPDK/gsclib045/lan/flow/t1u1/reference_libs/GPDK045/gsclib045_svt_v4.4/gsclib045/qrc/qx/gpdk045.tch 0.000000 by matching corner name
+#number model r/c [1,1] [11,792] read
+#0 rcmodel(s) requires rebuild
+#Build RC corners: cpu time = 00:00:01, elapsed time = 00:00:03, memory = 2107.00 (MB), peak = 12683.77 (MB)
+#Length limit = 200 pitches
+#opt mode = 2
+#Start routing data preparation on Sat Jan 21 18:44:49 2023
+#
+#Minimum voltage of a net in the design = 0.000.
+#Maximum voltage of a net in the design = 3.300.
+#Voltage range [0.000 - 1.100] has 13086 nets.
+#Voltage range [0.000 - 0.000] has 74 nets.
+#Voltage range [1.100 - 3.300] has 1 net.
+#Regenerating Ggrids automatically.
+#Auto generating G-grids with size=15 tracks, using layer Metal3's pitch = 0.19000.
+#Using automatically generated G-grids.
+#Done routing data preparation.
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 2101.47 (MB), peak = 12683.77 (MB)
+#Start routing data preparation on Sat Jan 21 18:44:49 2023
+#
+#Minimum voltage of a net in the design = 0.000.
+#Maximum voltage of a net in the design = 3.300.
+#Voltage range [0.000 - 1.100] has 13086 nets.
+#Voltage range [0.000 - 0.000] has 74 nets.
+#Voltage range [1.100 - 3.300] has 1 net.
+#Regenerating Ggrids automatically.
+#Auto generating G-grids with size=15 tracks, using layer Metal3's pitch = 0.19000.
+#Using automatically generated G-grids.
+#Done routing data preparation.
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 2101.48 (MB), peak = 12683.77 (MB)
+#Init Design Signature = -2020534861
+#Start generate extraction boxes.
+#
+#Extract using 30 x 30 Hboxes
+#92x91 initial hboxes
+#Use area based hbox pruning.
+#0/0 hboxes pruned.
+#218/1000 hboxes pruned.
+#586/2000 hboxes pruned.
+#856/3000 hboxes pruned.
+#1179/4000 hboxes pruned.
+#1418/5000 hboxes pruned.
+#1786/6000 hboxes pruned.
+#2035/7000 hboxes pruned.
+#2355/8000 hboxes pruned.
+#Complete generating extraction boxes.
+#Extract 5755 hboxes with single thread on machine with  Xeon 2.10GHz 28160KB Cache 12CPU...
+#Process 0 special clock nets for rc extraction
+#0 temporary NDR added
+#Need to add unplaced ipin PIN:clk of net 0(clk) into rc tree
+#Need to add unplaced ipin PIN:resetn of net 427(resetn) into rc tree
+#Need to add unplaced ipin PIN:mem_rdata[30] of net 484(mem_rdata[30]) into rc tree
+#Need to add unplaced ipin PIN:mem_rdata[29] of net 485(mem_rdata[29]) into rc tree
+#Need to add unplaced ipin PIN:mem_rdata[28] of net 486(mem_rdata[28]) into rc tree
+#Need to add unplaced ipin PIN:mem_rdata[27] of net 488(mem_rdata[27]) into rc tree
+#Need to add unplaced ipin PIN:mem_rdata[15] of net 489(mem_rdata[15]) into rc tree
+#Need to add unplaced ipin PIN:mem_rdata[26] of net 490(mem_rdata[26]) into rc tree
+#Need to add unplaced ipin PIN:mem_rdata[25] of net 491(mem_rdata[25]) into rc tree
+#Need to add unplaced ipin PIN:mem_rdata[24] of net 493(mem_rdata[24]) into rc tree
+#Need to add unplaced ipin PIN:mem_rdata[1] of net 587(mem_rdata[1]) into rc tree
+#Need to add unplaced ipin PIN:mem_rdata[8] of net 590(mem_rdata[8]) into rc tree
+#Need to add unplaced ipin PIN:mem_rdata[9] of net 591(mem_rdata[9]) into rc tree
+#Need to add unplaced ipin PIN:mem_rdata[10] of net 592(mem_rdata[10]) into rc tree
+#Need to add unplaced ipin PIN:mem_rdata[31] of net 593(mem_rdata[31]) into rc tree
+#Need to add unplaced ipin PIN:mem_rdata[11] of net 595(mem_rdata[11]) into rc tree
+#Need to add unplaced ipin PIN:mem_rdata[12] of net 596(mem_rdata[12]) into rc tree
+#Need to add unplaced ipin PIN:mem_rdata[16] of net 603(mem_rdata[16]) into rc tree
+#Need to add unplaced ipin PIN:mem_rdata[17] of net 604(mem_rdata[17]) into rc tree
+#Need to add unplaced ipin PIN:mem_rdata[18] of net 607(mem_rdata[18]) into rc tree
+#Need to add unplaced ipin PIN:mem_rdata[23] of net 609(mem_rdata[23]) into rc tree
+#Need to add unplaced ipin PIN:mem_rdata[19] of net 613(mem_rdata[19]) into rc tree
+#Need to add unplaced ipin PIN:mem_rdata[22] of net 616(mem_rdata[22]) into rc tree
+#Need to add unplaced ipin PIN:mem_rdata[20] of net 638(mem_rdata[20]) into rc tree
+#Need to add unplaced ipin PIN:mem_rdata[21] of net 675(mem_rdata[21]) into rc tree
+#Need to add unplaced ipin PIN:mem_ready of net 761(mem_ready) into rc tree
+#Need to add unplaced ipin PIN:mem_rdata[0] of net 766(mem_rdata[0]) into rc tree
+#Need to add unplaced ipin PIN:mem_rdata[2] of net 767(mem_rdata[2]) into rc tree
+#Need to add unplaced ipin PIN:mem_rdata[4] of net 771(mem_rdata[4]) into rc tree
+#Need to add unplaced ipin PIN:mem_rdata[5] of net 774(mem_rdata[5]) into rc tree
+#Need to add unplaced ipin PIN:mem_rdata[6] of net 776(mem_rdata[6]) into rc tree
+#Need to add unplaced ipin PIN:mem_rdata[7] of net 778(mem_rdata[7]) into rc tree
+#Need to add unplaced ipin PIN:mem_rdata[13] of net 783(mem_rdata[13]) into rc tree
+#Need to add unplaced ipin PIN:mem_rdata[14] of net 786(mem_rdata[14]) into rc tree
+#Need to add unplaced ipin PIN:mem_rdata[3] of net 1053(mem_rdata[3]) into rc tree
+#Need to add unplaced ipin PIN:pcpi_ready of net 1312(pcpi_ready) into rc tree
+#Need to add unplaced ipin PIN:pcpi_insn[23] of net 2951(pcpi_insn[23]) into rc tree
+#Need to add unplaced ipin PIN:pcpi_rs2[31] of net 2953(pcpi_rs2[31]) into rc tree
+#Need to add unplaced ipin PIN:mem_wdata[18] of net 2954(mem_wdata[18]) into rc tree
+#Need to add unplaced ipin PIN:mem_la_wdata[3] of net 2957(mem_la_wdata[3]) into rc tree
+#Need to add unplaced ipin PIN:pcpi_insn[7] of net 2958(pcpi_insn[7]) into rc tree
+#Need to add unplaced ipin PIN:pcpi_rs2[1] of net 2959(pcpi_rs2[1]) into rc tree
+#Need to add unplaced ipin PIN:pcpi_rs1[9] of net 2960(pcpi_rs1[9]) into rc tree
+#Need to add unplaced ipin PIN:mem_addr[21] of net 2962(mem_addr[21]) into rc tree
+#Need to add unplaced ipin PIN:pcpi_insn[21] of net 2963(pcpi_insn[21]) into rc tree
+#Need to add unplaced ipin PIN:mem_la_wdata[17] of net 2964(mem_la_wdata[17]) into rc tree
+#Need to add unplaced ipin PIN:mem_wdata[5] of net 2965(mem_wdata[5]) into rc tree
+#Need to add unplaced ipin PIN:pcpi_rs2[15] of net 2966(pcpi_rs2[15]) into rc tree
+#Need to add unplaced ipin PIN:pcpi_rs2[23] of net 2967(pcpi_rs2[23]) into rc tree
+#Need to add unplaced ipin PIN:mem_la_wdata[31] of net 2968(mem_la_wdata[31]) into rc tree
+#Need to add unplaced ipin PIN:mem_addr[20] of net 2969(mem_addr[20]) into rc tree
+#Need to add unplaced ipin PIN:mem_wdata[21] of net 2970(mem_wdata[21]) into rc tree
+#Need to add unplaced ipin PIN:pcpi_rs1[25] of net 2971(pcpi_rs1[25]) into rc tree
+#Need to add unplaced ipin PIN:mem_addr[22] of net 2972(mem_addr[22]) into rc tree
+#Need to add unplaced ipin PIN:pcpi_rs1[3] of net 2973(pcpi_rs1[3]) into rc tree
+#Need to add unplaced ipin PIN:mem_wdata[6] of net 2974(mem_wdata[6]) into rc tree
+#Need to add unplaced ipin PIN:mem_la_wdata[9] of net 2976(mem_la_wdata[9]) into rc tree
+#Need to add unplaced ipin PIN:pcpi_insn[13] of net 2977(pcpi_insn[13]) into rc tree
+#Need to add unplaced ipin PIN:mem_addr[23] of net 2978(mem_addr[23]) into rc tree
+#Need to add unplaced ipin PIN:mem_wdata[22] of net 2979(mem_wdata[22]) into rc tree
+#Need to add unplaced ipin PIN:pcpi_insn[29] of net 2980(pcpi_insn[29]) into rc tree
+#Need to add unplaced ipin PIN:pcpi_rs2[7] of net 2981(pcpi_rs2[7]) into rc tree
+#Need to add unplaced ipin PIN:mem_la_wdata[25] of net 2982(mem_la_wdata[25]) into rc tree
+#Need to add unplaced ipin PIN:mem_la_addr[4] of net 2983(mem_la_addr[4]) into rc tree
+#Need to add unplaced ipin PIN:pcpi_rs1[17] of net 2984(pcpi_rs1[17]) into rc tree
+#Need to add unplaced ipin PIN:pcpi_rs1[19] of net 2985(pcpi_rs1[19]) into rc tree
+#Need to add unplaced ipin PIN:mem_wstrb[1] of net 2986(mem_wstrb[1]) into rc tree
+#Need to add unplaced ipin PIN:mem_wstrb[3] of net 2987(mem_wstrb[3]) into rc tree
+#Need to add unplaced ipin PIN:mem_wdata[7] of net 2988(mem_wdata[7]) into rc tree
+#Need to add unplaced ipin PIN:mem_wdata[19] of net 2989(mem_wdata[19]) into rc tree
+#Need to add unplaced ipin PIN:mem_la_wdata[23] of net 2990(mem_la_wdata[23]) into rc tree
+#Need to add unplaced ipin PIN:pcpi_insn[27] of net 2991(pcpi_insn[27]) into rc tree
+#Need to add unplaced ipin PIN:pcpi_rs2[9] of net 2992(pcpi_rs2[9]) into rc tree
+#Need to add unplaced ipin PIN:pcpi_insn[15] of net 2993(pcpi_insn[15]) into rc tree
+#Need to add unplaced ipin PIN:mem_addr[24] of net 2994(mem_addr[24]) into rc tree
+#Need to add unplaced ipin PIN:mem_la_wdata[11] of net 2995(mem_la_wdata[11]) into rc tree
+#Need to add unplaced ipin PIN:pcpi_rs2[21] of net 2997(pcpi_rs2[21]) into rc tree
+#Need to add unplaced ipin PIN:pcpi_insn[5] of net 2998(pcpi_insn[5]) into rc tree
+#Need to add unplaced ipin PIN:mem_addr[7] of net 2999(mem_addr[7]) into rc tree
+#Need to add unplaced ipin PIN:mem_wdata[8] of net 3000(mem_wdata[8]) into rc tree
+#Need to add unplaced ipin PIN:pcpi_rs1[5] of net 3001(pcpi_rs1[5]) into rc tree
+#Need to add unplaced ipin PIN:pcpi_rs2[29] of net 3002(pcpi_rs2[29]) into rc tree
+#Need to add unplaced ipin PIN:mem_la_wdata[1] of net 3003(mem_la_wdata[1]) into rc tree
+#Need to add unplaced ipin PIN:mem_wdata[20] of net 3004(mem_wdata[20]) into rc tree
+#Need to add unplaced ipin PIN:mem_la_addr[21] of net 3005(mem_la_addr[21]) into rc tree
+#Need to add unplaced ipin PIN:pcpi_rs1[31] of net 3006(pcpi_rs1[31]) into rc tree
+#Need to add unplaced ipin PIN:pcpi_rs1[27] of net 3009(pcpi_rs1[27]) into rc tree
+#Need to add unplaced ipin PIN:pcpi_insn[1] of net 3010(pcpi_insn[1]) into rc tree
+#Need to add unplaced ipin PIN:mem_addr[25] of net 3011(mem_addr[25]) into rc tree
+#Need to add unplaced ipin PIN:mem_wdata[24] of net 3012(mem_wdata[24]) into rc tree
+#Need to add unplaced ipin PIN:pcpi_rs1[11] of net 3013(pcpi_rs1[11]) into rc tree
+#Need to add unplaced ipin PIN:mem_la_addr[6] of net 3014(mem_la_addr[6]) into rc tree
+#Need to add unplaced ipin PIN:pcpi_rs2[17] of net 3015(pcpi_rs2[17]) into rc tree
+#Need to add unplaced ipin PIN:mem_la_wdata[15] of net 3016(mem_la_wdata[15]) into rc tree
+#Need to add unplaced ipin PIN:mem_addr[8] of net 3017(mem_addr[8]) into rc tree
+#Need to add unplaced ipin PIN:pcpi_insn[19] of net 3018(pcpi_insn[19]) into rc tree
+#Need to add unplaced ipin PIN:mem_wdata[9] of net 3019(mem_wdata[9]) into rc tree
+#Need to add unplaced ipin PIN:mem_la_addr[22] of net 3020(mem_la_addr[22]) into rc tree
+#Need to add unplaced ipin PIN:mem_la_wdata[19] of net 3021(mem_la_wdata[19]) into rc tree
+#Need to add unplaced ipin PIN:pcpi_rs2[13] of net 3022(pcpi_rs2[13]) into rc tree
+#Need to add unplaced ipin PIN:mem_wdata[25] of net 3023(mem_wdata[25]) into rc tree
+#Need to add unplaced ipin PIN:mem_la_wstrb[3] of net 3025(mem_la_wstrb[3]) into rc tree
+#Need to add unplaced ipin PIN:mem_addr[26] of net 3026(mem_addr[26]) into rc tree
+#Need to add unplaced ipin PIN:pcpi_rs1[13] of net 3027(pcpi_rs1[13]) into rc tree
+#Need to add unplaced ipin PIN:pcpi_rs1[23] of net 3028(pcpi_rs1[23]) into rc tree
+#Need to add unplaced ipin PIN:mem_la_wdata[29] of net 3029(mem_la_wdata[29]) into rc tree
+#Need to add unplaced ipin PIN:mem_addr[9] of net 3030(mem_addr[9]) into rc tree
+#Need to add unplaced ipin PIN:mem_wdata[10] of net 3031(mem_wdata[10]) into rc tree
+#Need to add unplaced ipin PIN:pcpi_rs1[1] of net 3032(pcpi_rs1[1]) into rc tree
+#Need to add unplaced ipin PIN:pcpi_insn[9] of net 3033(pcpi_insn[9]) into rc tree
+#Need to add unplaced ipin PIN:mem_la_addr[23] of net 3034(mem_la_addr[23]) into rc tree
+#Need to add unplaced ipin PIN:mem_la_wdata[5] of net 3036(mem_la_wdata[5]) into rc tree
+#Need to add unplaced ipin PIN:pcpi_rs2[25] of net 3037(pcpi_rs2[25]) into rc tree
+#Need to add unplaced ipin PIN:mem_addr[27] of net 3039(mem_addr[27]) into rc tree
+#Need to add unplaced ipin PIN:mem_wdata[26] of net 3040(mem_wdata[26]) into rc tree
+#Need to add unplaced ipin PIN:pcpi_insn[11] of net 3041(pcpi_insn[11]) into rc tree
+#Need to add unplaced ipin PIN:mem_la_wdata[7] of net 3042(mem_la_wdata[7]) into rc tree
+#Need to add unplaced ipin PIN:mem_la_addr[8] of net 3043(mem_la_addr[8]) into rc tree
+#Need to add unplaced ipin PIN:pcpi_insn[31] of net 3044(pcpi_insn[31]) into rc tree
+#Need to add unplaced ipin PIN:mem_addr[10] of net 3045(mem_addr[10]) into rc tree
+#Need to add unplaced ipin PIN:pcpi_rs2[5] of net 3046(pcpi_rs2[5]) into rc tree
+#Need to add unplaced ipin PIN:mem_wdata[23] of net 3047(mem_wdata[23]) into rc tree
+#Need to add unplaced ipin PIN:mem_la_wdata[27] of net 3048(mem_la_wdata[27]) into rc tree
+#Need to add unplaced ipin PIN:pcpi_rs1[21] of net 3049(pcpi_rs1[21]) into rc tree
+#Need to add unplaced ipin PIN:mem_la_addr[24] of net 3050(mem_la_addr[24]) into rc tree
+#Need to add unplaced ipin PIN:pcpi_rs1[15] of net 3051(pcpi_rs1[15]) into rc tree
+#Need to add unplaced ipin PIN:mem_instr of net 3052(mem_instr) into rc tree
+#Need to add unplaced ipin PIN:mem_la_wstrb[1] of net 3053(mem_la_wstrb[1]) into rc tree
+#Need to add unplaced ipin PIN:mem_la_wdata[21] of net 3054(mem_la_wdata[21]) into rc tree
+#Need to add unplaced ipin PIN:mem_wdata[27] of net 3055(mem_wdata[27]) into rc tree
+#Need to add unplaced ipin PIN:pcpi_rs2[11] of net 3056(pcpi_rs2[11]) into rc tree
+#Need to add unplaced ipin PIN:mem_addr[28] of net 3057(mem_addr[28]) into rc tree
+#Need to add unplaced ipin PIN:mem_la_addr[7] of net 3058(mem_la_addr[7]) into rc tree
+#Need to add unplaced ipin PIN:pcpi_insn[25] of net 3059(pcpi_insn[25]) into rc tree
+#Need to add unplaced ipin PIN:mem_la_addr[9] of net 3061(mem_la_addr[9]) into rc tree
+#Need to add unplaced ipin PIN:pcpi_rs2[3] of net 3062(pcpi_rs2[3]) into rc tree
+#Need to add unplaced ipin PIN:mem_la_wdata[13] of net 3063(mem_la_wdata[13]) into rc tree
+#Need to add unplaced ipin PIN:pcpi_insn[17] of net 3064(pcpi_insn[17]) into rc tree
+#Need to add unplaced ipin PIN:mem_addr[11] of net 3065(mem_addr[11]) into rc tree
+#Need to add unplaced ipin PIN:mem_wdata[12] of net 3066(mem_wdata[12]) into rc tree
+#Need to add unplaced ipin PIN:pcpi_rs2[19] of net 3067(pcpi_rs2[19]) into rc tree
+#Need to add unplaced ipin PIN:pcpi_insn[3] of net 3068(pcpi_insn[3]) into rc tree
+#Need to add unplaced ipin PIN:pcpi_rs1[7] of net 3069(pcpi_rs1[7]) into rc tree
+#Need to add unplaced ipin PIN:pcpi_rs1[29] of net 3070(pcpi_rs1[29]) into rc tree
+#Need to add unplaced ipin PIN:mem_la_addr[25] of net 3071(mem_la_addr[25]) into rc tree
+#Need to add unplaced ipin PIN:pcpi_rs2[27] of net 3073(pcpi_rs2[27]) into rc tree
+#Need to add unplaced ipin PIN:mem_addr[29] of net 3074(mem_addr[29]) into rc tree
+#Need to add unplaced ipin PIN:mem_wdata[28] of net 3075(mem_wdata[28]) into rc tree
+#Need to add unplaced ipin PIN:mem_la_addr[10] of net 3077(mem_la_addr[10]) into rc tree
+#Need to add unplaced ipin PIN:mem_addr[12] of net 3078(mem_addr[12]) into rc tree
+#Need to add unplaced ipin PIN:mem_wdata[13] of net 3079(mem_wdata[13]) into rc tree
+#Need to add unplaced ipin PIN:mem_valid of net 3080(mem_valid) into rc tree
+#Need to add unplaced ipin PIN:mem_la_addr[26] of net 3081(mem_la_addr[26]) into rc tree
+#Need to add unplaced ipin PIN:mem_wdata[29] of net 3082(mem_wdata[29]) into rc tree
+#Need to add unplaced ipin PIN:mem_addr[30] of net 3083(mem_addr[30]) into rc tree
+#Need to add unplaced ipin PIN:mem_la_addr[11] of net 3085(mem_la_addr[11]) into rc tree
+#Need to add unplaced ipin PIN:mem_addr[13] of net 3086(mem_addr[13]) into rc tree
+#Need to add unplaced ipin PIN:mem_wdata[14] of net 3087(mem_wdata[14]) into rc tree
+#Need to add unplaced ipin PIN:mem_la_addr[27] of net 3089(mem_la_addr[27]) into rc tree
+#Need to add unplaced ipin PIN:mem_addr[31] of net 3090(mem_addr[31]) into rc tree
+#Need to add unplaced ipin PIN:mem_wdata[30] of net 3091(mem_wdata[30]) into rc tree
+#Need to add unplaced ipin PIN:mem_wdata[11] of net 3093(mem_wdata[11]) into rc tree
+#Need to add unplaced ipin PIN:mem_la_addr[12] of net 3094(mem_la_addr[12]) into rc tree
+#Need to add unplaced ipin PIN:trap of net 3095(trap) into rc tree
+#Need to add unplaced ipin PIN:pcpi_valid of net 3096(pcpi_valid) into rc tree
+#Need to add unplaced ipin PIN:mem_la_read of net 3097(mem_la_read) into rc tree
+#Need to add unplaced ipin PIN:mem_la_write of net 3098(mem_la_write) into rc tree
+#Need to add unplaced ipin PIN:mem_addr[14] of net 3099(mem_addr[14]) into rc tree
+#Need to add unplaced ipin PIN:mem_wdata[15] of net 3100(mem_wdata[15]) into rc tree
+#Need to add unplaced ipin PIN:mem_wdata[0] of net 3101(mem_wdata[0]) into rc tree
+#Need to add unplaced ipin PIN:mem_la_addr[13] of net 3102(mem_la_addr[13]) into rc tree
+#Need to add unplaced ipin PIN:mem_addr[15] of net 3103(mem_addr[15]) into rc tree
+#Need to add unplaced ipin PIN:mem_wdata[16] of net 3104(mem_wdata[16]) into rc tree
+#Need to add unplaced ipin PIN:mem_wdata[1] of net 3107(mem_wdata[1]) into rc tree
+#Need to add unplaced ipin PIN:mem_la_addr[14] of net 3108(mem_la_addr[14]) into rc tree
+#Need to add unplaced ipin PIN:mem_addr[16] of net 3109(mem_addr[16]) into rc tree
+#Need to add unplaced ipin PIN:mem_la_addr[28] of net 3111(mem_la_addr[28]) into rc tree
+#Need to add unplaced ipin PIN:mem_wdata[31] of net 3112(mem_wdata[31]) into rc tree
+#Need to add unplaced ipin PIN:mem_la_addr[30] of net 3113(mem_la_addr[30]) into rc tree
+#Need to add unplaced ipin PIN:mem_wdata[2] of net 3115(mem_wdata[2]) into rc tree
+#Need to add unplaced ipin PIN:mem_la_addr[15] of net 3117(mem_la_addr[15]) into rc tree
+#Need to add unplaced ipin PIN:mem_addr[17] of net 3118(mem_addr[17]) into rc tree
+#Need to add unplaced ipin PIN:mem_la_addr[29] of net 3119(mem_la_addr[29]) into rc tree
+#Need to add unplaced ipin PIN:mem_la_addr[31] of net 3120(mem_la_addr[31]) into rc tree
+#Need to add unplaced ipin PIN:mem_addr[2] of net 3121(mem_addr[2]) into rc tree
+#Need to add unplaced ipin PIN:mem_wdata[3] of net 3122(mem_wdata[3]) into rc tree
+#Need to add unplaced ipin PIN:mem_la_addr[16] of net 3123(mem_la_addr[16]) into rc tree
+#Need to add unplaced ipin PIN:mem_addr[18] of net 3124(mem_addr[18]) into rc tree
+#Need to add unplaced ipin PIN:mem_wdata[17] of net 3125(mem_wdata[17]) into rc tree
+#Need to add unplaced ipin PIN:mem_addr[3] of net 3127(mem_addr[3]) into rc tree
+#Need to add unplaced ipin PIN:mem_wdata[4] of net 3128(mem_wdata[4]) into rc tree
+#Need to add unplaced ipin PIN:mem_la_addr[17] of net 3129(mem_la_addr[17]) into rc tree
+#Need to add unplaced ipin PIN:mem_addr[19] of net 3131(mem_addr[19]) into rc tree
+#Need to add unplaced ipin PIN:mem_la_addr[2] of net 3132(mem_la_addr[2]) into rc tree
+#Need to add unplaced ipin PIN:mem_addr[4] of net 3134(mem_addr[4]) into rc tree
+#Need to add unplaced ipin PIN:mem_la_addr[18] of net 3136(mem_la_addr[18]) into rc tree
+#Need to add unplaced ipin PIN:mem_la_addr[3] of net 3138(mem_la_addr[3]) into rc tree
+#Need to add unplaced ipin PIN:mem_addr[5] of net 3139(mem_addr[5]) into rc tree
+#Need to add unplaced ipin PIN:mem_la_addr[19] of net 3140(mem_la_addr[19]) into rc tree
+#Need to add unplaced ipin PIN:pcpi_rd[2] of net 3141(pcpi_rd[2]) into rc tree
+#Need to add unplaced ipin PIN:pcpi_rd[4] of net 3142(pcpi_rd[4]) into rc tree
+#Need to add unplaced ipin PIN:mem_addr[6] of net 3143(mem_addr[6]) into rc tree
+#Need to add unplaced ipin PIN:mem_la_addr[20] of net 3144(mem_la_addr[20]) into rc tree
+#Need to add unplaced ipin PIN:mem_la_wdata[0] of net 3145(mem_la_wdata[0]) into rc tree
+#Need to add unplaced ipin PIN:mem_la_wdata[2] of net 3146(mem_la_wdata[2]) into rc tree
+#Need to add unplaced ipin PIN:mem_la_wdata[4] of net 3147(mem_la_wdata[4]) into rc tree
+#Need to add unplaced ipin PIN:mem_la_wdata[6] of net 3148(mem_la_wdata[6]) into rc tree
+#Need to add unplaced ipin PIN:mem_la_wdata[8] of net 3149(mem_la_wdata[8]) into rc tree
+#Need to add unplaced ipin PIN:mem_la_wdata[10] of net 3150(mem_la_wdata[10]) into rc tree
+#Need to add unplaced ipin PIN:mem_la_wdata[12] of net 3151(mem_la_wdata[12]) into rc tree
+#Need to add unplaced ipin PIN:mem_la_wdata[14] of net 3152(mem_la_wdata[14]) into rc tree
+#Need to add unplaced ipin PIN:mem_la_wdata[16] of net 3153(mem_la_wdata[16]) into rc tree
+#Need to add unplaced ipin PIN:mem_la_wdata[18] of net 3154(mem_la_wdata[18]) into rc tree
+#Need to add unplaced ipin PIN:mem_la_wdata[20] of net 3155(mem_la_wdata[20]) into rc tree
+#Need to add unplaced ipin PIN:mem_la_wdata[22] of net 3156(mem_la_wdata[22]) into rc tree
+#Need to add unplaced ipin PIN:mem_la_wdata[24] of net 3157(mem_la_wdata[24]) into rc tree
+#Need to add unplaced ipin PIN:mem_la_wdata[26] of net 3158(mem_la_wdata[26]) into rc tree
+#Need to add unplaced ipin PIN:mem_la_wdata[28] of net 3159(mem_la_wdata[28]) into rc tree
+#Need to add unplaced ipin PIN:mem_la_wdata[30] of net 3160(mem_la_wdata[30]) into rc tree
+#Need to add unplaced ipin PIN:pcpi_insn[0] of net 3161(pcpi_insn[0]) into rc tree
+#Need to add unplaced ipin PIN:pcpi_insn[2] of net 3162(pcpi_insn[2]) into rc tree
+#Need to add unplaced ipin PIN:pcpi_insn[4] of net 3163(pcpi_insn[4]) into rc tree
+#Need to add unplaced ipin PIN:pcpi_insn[6] of net 3164(pcpi_insn[6]) into rc tree
+#Need to add unplaced ipin PIN:pcpi_insn[8] of net 3165(pcpi_insn[8]) into rc tree
+#Need to add unplaced ipin PIN:pcpi_insn[10] of net 3166(pcpi_insn[10]) into rc tree
+#Need to add unplaced ipin PIN:pcpi_insn[12] of net 3167(pcpi_insn[12]) into rc tree
+#Need to add unplaced ipin PIN:pcpi_insn[14] of net 3168(pcpi_insn[14]) into rc tree
+#Need to add unplaced ipin PIN:pcpi_insn[16] of net 3169(pcpi_insn[16]) into rc tree
+#Need to add unplaced ipin PIN:pcpi_insn[18] of net 3170(pcpi_insn[18]) into rc tree
+#Need to add unplaced ipin PIN:pcpi_insn[20] of net 3171(pcpi_insn[20]) into rc tree
+#Need to add unplaced ipin PIN:pcpi_insn[22] of net 3172(pcpi_insn[22]) into rc tree
+#Need to add unplaced ipin PIN:pcpi_insn[24] of net 3173(pcpi_insn[24]) into rc tree
+#Need to add unplaced ipin PIN:pcpi_insn[26] of net 3174(pcpi_insn[26]) into rc tree
+#Need to add unplaced ipin PIN:pcpi_insn[28] of net 3175(pcpi_insn[28]) into rc tree
+#Need to add unplaced ipin PIN:pcpi_insn[30] of net 3176(pcpi_insn[30]) into rc tree
+#Need to add unplaced ipin PIN:pcpi_rs1[0] of net 3177(pcpi_rs1[0]) into rc tree
+#Need to add unplaced ipin PIN:pcpi_rs1[2] of net 3178(pcpi_rs1[2]) into rc tree
+#Need to add unplaced ipin PIN:pcpi_rs1[4] of net 3179(pcpi_rs1[4]) into rc tree
+#Need to add unplaced ipin PIN:pcpi_rs1[6] of net 3180(pcpi_rs1[6]) into rc tree
+#Need to add unplaced ipin PIN:pcpi_rs1[10] of net 3181(pcpi_rs1[10]) into rc tree
+#Need to add unplaced ipin PIN:pcpi_rs1[8] of net 3182(pcpi_rs1[8]) into rc tree
+#Need to add unplaced ipin PIN:pcpi_rs1[12] of net 3183(pcpi_rs1[12]) into rc tree
+#Need to add unplaced ipin PIN:pcpi_rs1[14] of net 3184(pcpi_rs1[14]) into rc tree
+#Need to add unplaced ipin PIN:pcpi_rs1[16] of net 3185(pcpi_rs1[16]) into rc tree
+#Need to add unplaced ipin PIN:pcpi_rs1[18] of net 3186(pcpi_rs1[18]) into rc tree
+#Need to add unplaced ipin PIN:pcpi_rs1[20] of net 3187(pcpi_rs1[20]) into rc tree
+#Need to add unplaced ipin PIN:pcpi_rs1[22] of net 3188(pcpi_rs1[22]) into rc tree
+#Need to add unplaced ipin PIN:pcpi_rs1[24] of net 3189(pcpi_rs1[24]) into rc tree
+#Need to add unplaced ipin PIN:pcpi_rs1[26] of net 3190(pcpi_rs1[26]) into rc tree
+#Need to add unplaced ipin PIN:pcpi_rs1[28] of net 3191(pcpi_rs1[28]) into rc tree
+#Need to add unplaced ipin PIN:pcpi_rs1[30] of net 3192(pcpi_rs1[30]) into rc tree
+#Need to add unplaced ipin PIN:pcpi_rs2[0] of net 3193(pcpi_rs2[0]) into rc tree
+#Need to add unplaced ipin PIN:pcpi_rs2[2] of net 3194(pcpi_rs2[2]) into rc tree
+#Need to add unplaced ipin PIN:pcpi_rs2[4] of net 3195(pcpi_rs2[4]) into rc tree
+#Need to add unplaced ipin PIN:pcpi_rs2[6] of net 3196(pcpi_rs2[6]) into rc tree
+#Need to add unplaced ipin PIN:pcpi_rs2[8] of net 3197(pcpi_rs2[8]) into rc tree
+#Need to add unplaced ipin PIN:pcpi_rs2[10] of net 3198(pcpi_rs2[10]) into rc tree
+#Need to add unplaced ipin PIN:pcpi_rs2[12] of net 3199(pcpi_rs2[12]) into rc tree
+#Need to add unplaced ipin PIN:pcpi_rs2[14] of net 3200(pcpi_rs2[14]) into rc tree
+#Need to add unplaced ipin PIN:pcpi_rs2[16] of net 3201(pcpi_rs2[16]) into rc tree
+#Need to add unplaced ipin PIN:pcpi_rs2[18] of net 3202(pcpi_rs2[18]) into rc tree
+#Need to add unplaced ipin PIN:pcpi_rs2[20] of net 3203(pcpi_rs2[20]) into rc tree
+#Need to add unplaced ipin PIN:pcpi_rs2[22] of net 3204(pcpi_rs2[22]) into rc tree
+#Need to add unplaced ipin PIN:pcpi_rs2[24] of net 3205(pcpi_rs2[24]) into rc tree
+#Need to add unplaced ipin PIN:pcpi_rs2[26] of net 3206(pcpi_rs2[26]) into rc tree
+#Need to add unplaced ipin PIN:pcpi_rs2[28] of net 3207(pcpi_rs2[28]) into rc tree
+#Need to add unplaced ipin PIN:pcpi_rs2[30] of net 3208(pcpi_rs2[30]) into rc tree
+#Need to add unplaced ipin PIN:mem_wstrb[0] of net 3209(mem_wstrb[0]) into rc tree
+#Need to add unplaced ipin PIN:mem_wstrb[2] of net 3210(mem_wstrb[2]) into rc tree
+#Need to add unplaced ipin PIN:mem_la_wstrb[0] of net 3211(mem_la_wstrb[0]) into rc tree
+#Need to add unplaced ipin PIN:mem_la_wstrb[2] of net 3212(mem_la_wstrb[2]) into rc tree
+#Need to add unplaced ipin PIN:mem_la_addr[5] of net 3213(mem_la_addr[5]) into rc tree
+#Need to add unplaced ipin PIN:pcpi_rd[11] of net 3215(pcpi_rd[11]) into rc tree
+#Need to add unplaced ipin PIN:pcpi_rd[15] of net 3218(pcpi_rd[15]) into rc tree
+#Need to add unplaced ipin PIN:pcpi_rd[24] of net 3219(pcpi_rd[24]) into rc tree
+#Need to add unplaced ipin PIN:pcpi_rd[13] of net 3222(pcpi_rd[13]) into rc tree
+#Need to add unplaced ipin PIN:pcpi_rd[22] of net 3223(pcpi_rd[22]) into rc tree
+#Need to add unplaced ipin PIN:pcpi_rd[3] of net 3224(pcpi_rd[3]) into rc tree
+#Need to add unplaced ipin PIN:pcpi_rd[20] of net 3228(pcpi_rd[20]) into rc tree
+#Need to add unplaced ipin PIN:pcpi_rd[17] of net 3229(pcpi_rd[17]) into rc tree
+#Need to add unplaced ipin PIN:pcpi_rd[0] of net 3232(pcpi_rd[0]) into rc tree
+#Need to add unplaced ipin PIN:pcpi_rd[18] of net 3233(pcpi_rd[18]) into rc tree
+#Need to add unplaced ipin PIN:pcpi_rd[31] of net 3234(pcpi_rd[31]) into rc tree
+#Need to add unplaced ipin PIN:pcpi_rd[29] of net 3236(pcpi_rd[29]) into rc tree
+#Need to add unplaced ipin PIN:pcpi_rd[1] of net 3243(pcpi_rd[1]) into rc tree
+#Need to add unplaced ipin PIN:pcpi_rd[5] of net 3244(pcpi_rd[5]) into rc tree
+#Need to add unplaced ipin PIN:pcpi_rd[6] of net 3245(pcpi_rd[6]) into rc tree
+#Need to add unplaced ipin PIN:pcpi_rd[7] of net 3246(pcpi_rd[7]) into rc tree
+#Need to add unplaced ipin PIN:pcpi_rd[8] of net 3247(pcpi_rd[8]) into rc tree
+#Need to add unplaced ipin PIN:pcpi_rd[9] of net 3248(pcpi_rd[9]) into rc tree
+#Need to add unplaced ipin PIN:pcpi_rd[10] of net 3249(pcpi_rd[10]) into rc tree
+#Need to add unplaced ipin PIN:pcpi_rd[12] of net 3250(pcpi_rd[12]) into rc tree
+#Need to add unplaced ipin PIN:pcpi_rd[14] of net 3251(pcpi_rd[14]) into rc tree
+#Need to add unplaced ipin PIN:pcpi_rd[23] of net 3252(pcpi_rd[23]) into rc tree
+#Need to add unplaced ipin PIN:pcpi_rd[25] of net 3253(pcpi_rd[25]) into rc tree
+#Need to add unplaced ipin PIN:pcpi_rd[26] of net 3254(pcpi_rd[26]) into rc tree
+#Need to add unplaced ipin PIN:pcpi_rd[27] of net 3255(pcpi_rd[27]) into rc tree
+#Need to add unplaced ipin PIN:pcpi_rd[30] of net 3256(pcpi_rd[30]) into rc tree
+#Need to add unplaced ipin PIN:pcpi_wr of net 3260(pcpi_wr) into rc tree
+#Need to add unplaced ipin PIN:pcpi_rd[21] of net 3264(pcpi_rd[21]) into rc tree
+#Need to add unplaced ipin PIN:pcpi_rd[28] of net 3265(pcpi_rd[28]) into rc tree
+#Need to add unplaced ipin PIN:pcpi_rd[16] of net 3266(pcpi_rd[16]) into rc tree
+#Need to add unplaced ipin PIN:pcpi_rd[19] of net 3267(pcpi_rd[19]) into rc tree
+#Need to add unplaced ipin PIN:pcpi_wait of net 3272(pcpi_wait) into rc tree
+#Total 12973 nets were built. 38572 nodes added to break long wires. 0 net(s) have incomplete routes.
+#Run Statistics for Extraction:
+#   Cpu time = 00:09:46, elapsed time = 00:09:45 .
+#   Increased memory =    89.36 (MB), total memory =  2199.84 (MB), peak memory = 12683.77 (MB)
+#Simplify RC tree: cpu time = 00:00:00, elapsed time = 00:00:00, memory = 2162.07 (MB), peak = 12683.77 (MB)
+#RC Statistics: 120603 Res, 88721 Ground Cap, 41167 XCap (Edge to Edge)
+#RC V/H edge ratio: 0.88, Avg V/H Edge Length: 18904.20 (81149), Avg L-Edge Length: 8795.45 (24059)
+#Start writing rcdb into /tmp/innovus_temp_106203_cn99.it.auth.gr_karamitopp_drBw7j/nr106203_xuwApZ.rcdb.d
+#Finish writing rcdb with 134162 nodes, 121189 edges, and 94954 xcaps
+#cpu time = 00:00:01, elapsed time = 00:00:01, memory = 2170.87 (MB), peak = 12683.77 (MB)
+Restoring parasitic data from file '/tmp/innovus_temp_106203_cn99.it.auth.gr_karamitopp_drBw7j/nr106203_xuwApZ.rcdb.d' ...
+Reading RCDB with compressed RC data.
+Reading RCDB with compressed RC data.
+Begin read_parasitics... (cpu: 0:00:00.0 real: 0:00:00.0 mem: 4550.000M)
+Following multi-corner parasitics specified:
+	/tmp/innovus_temp_106203_cn99.it.auth.gr_karamitopp_drBw7j/nr106203_xuwApZ.rcdb.d (rcdb)
+Reading RCDB with compressed RC data.
+		Cell example_module_pads has rcdb /tmp/innovus_temp_106203_cn99.it.auth.gr_karamitopp_drBw7j/nr106203_xuwApZ.rcdb.d specified
+Cell example_module_pads, hinst 
+Reading RCDB with compressed RC data.
+Done read_parasitics... (cpu: 0:00:00.6 real: 0:00:00.0 mem: 4526.000M)
+#
+#Restore RCDB.
+#
+#Complete tQuantus RC extraction.
+#Cpu time = 00:09:53
+#Elapsed time = 00:09:56
+#Increased memory = 84.71 (MB)
+#Total memory = 2164.14 (MB)
+#Peak memory = 12683.77 (MB)
+#
+#38572 inserted nodes are removed
+#Final Design Signature = -2020534861
+AAE_INFO: 1 threads acquired from CTE.
+Calculate delays in Single mode...
+Start delay calculation (fullDC) (1 T). (MEM=4477.98)
+siFlow : Timing analysis mode is single, using late cdB files
+siFlow : Timing analysis mode is single, using late cdB files
+Reading RCDB with compressed RC data.
+**WARN: (IMPESI-3140):	Bumpy transitions may exist in the design which may lead to inaccurate delay computation. To report/analyze the nets having bumpy transition, please enable delay report and use command 'report_noise -bumpy_waveform' after timing analysis. Delay report is enabled by setting 'set_si_mode -enable_delay_report true' before timing analysis.
+Total number of fetched objects 13517
+AAE_INFO: Total number of nets for which stage creation was skipped for all views 0
+AAE_INFO-618: Total number of nets in the design is 13161,  100.0 percent of the nets selected for SI analysis
+End delay calculation. (MEM=4561.55 CPU=0:00:03.1 REAL=0:00:04.0)
+End delay calculation (fullDC). (MEM=4544.02 CPU=0:00:03.6 REAL=0:00:04.0)
+Loading CTE timing window with TwFlowType 0...(CPU = 0:00:00.0, REAL = 0:00:00.0, MEM = 4544.0M)
+Add other clocks and setupCteToAAEClockMapping during iter 1
+Loading CTE timing window is completed (CPU = 0:00:00.1, REAL = 0:00:00.0, MEM = 4544.0M)
+Starting SI iteration 2
+Calculate delays in Single mode...
+Start delay calculation (fullDC) (1 T). (MEM=4501.02)
+Total number of fetched objects 13517
+AAE_INFO: Total number of nets for which stage creation was skipped for all views 0
+AAE_INFO-618: Total number of nets in the design is 13161,  1.8 percent of the nets selected for SI analysis
+End delay calculation. (MEM=4507.17 CPU=0:00:00.5 REAL=0:00:01.0)
+End delay calculation (fullDC). (MEM=4507.17 CPU=0:00:00.6 REAL=0:00:01.0)
+Load RC corner of view default_emulate_view
+
+Begin Power Analysis
+
+    0.00V	    VSS
+    1.10V	    VDD
+
+Begin Processing Timing Library for Power Calculation
+
+Begin Processing Timing Library for Power Calculation
+
+
+
+Begin Processing Power Net/Grid for Power Calculation
+
+Ended Processing Power Net/Grid for Power Calculation: (cpu=0:00:00, real=0:00:00, mem(process/total/peak)=2128.44MB/5498.73MB/12475.09MB)
+
+Begin Processing Timing Window Data for Power Calculation
+
+CK: assigning clock clk to net clk
+Ended Processing Timing Window Data for Power Calculation: (cpu=0:00:00, real=0:00:00, mem(process/total/peak)=2128.44MB/5498.73MB/12475.09MB)
+
+Begin Processing User Attributes
+
+Ended Processing User Attributes: (cpu=0:00:00, real=0:00:00, mem(process/total/peak)=2128.44MB/5498.73MB/12475.09MB)
+
+Begin Processing Signal Activity
+
+
+Starting Levelizing
+2023-Jan-21 18:54:43 (2023-Jan-21 16:54:43 GMT)
+2023-Jan-21 18:54:43 (2023-Jan-21 16:54:43 GMT): 10%
+2023-Jan-21 18:54:43 (2023-Jan-21 16:54:43 GMT): 20%
+2023-Jan-21 18:54:43 (2023-Jan-21 16:54:43 GMT): 30%
+2023-Jan-21 18:54:43 (2023-Jan-21 16:54:43 GMT): 40%
+2023-Jan-21 18:54:43 (2023-Jan-21 16:54:43 GMT): 50%
+2023-Jan-21 18:54:43 (2023-Jan-21 16:54:43 GMT): 60%
+2023-Jan-21 18:54:43 (2023-Jan-21 16:54:43 GMT): 70%
+2023-Jan-21 18:54:43 (2023-Jan-21 16:54:43 GMT): 80%
+2023-Jan-21 18:54:43 (2023-Jan-21 16:54:43 GMT): 90%
+
+Finished Levelizing
+2023-Jan-21 18:54:43 (2023-Jan-21 16:54:43 GMT)
+
+Starting Activity Propagation
+2023-Jan-21 18:54:43 (2023-Jan-21 16:54:43 GMT)
+2023-Jan-21 18:54:43 (2023-Jan-21 16:54:43 GMT): 10%
+2023-Jan-21 18:54:43 (2023-Jan-21 16:54:43 GMT): 20%
+
+Finished Activity Propagation
+2023-Jan-21 18:54:44 (2023-Jan-21 16:54:44 GMT)
+Ended Processing Signal Activity: (cpu=0:00:00, real=0:00:00, mem(process/total/peak)=2128.95MB/5498.73MB/12475.09MB)
+
+Begin Power Computation
+
+      ----------------------------------------------------------
+      # of cell(s) missing both power/leakage table: 0
+      # of cell(s) missing power table: 0
+      # of cell(s) missing leakage table: 0
+      # of MSMV cell(s) missing power_level: 0
+      ----------------------------------------------------------
+
+
+
+Starting Calculating power
+2023-Jan-21 18:54:44 (2023-Jan-21 16:54:44 GMT)
+ ... Calculating switching power
+2023-Jan-21 18:54:44 (2023-Jan-21 16:54:44 GMT): 10%
+2023-Jan-21 18:54:44 (2023-Jan-21 16:54:44 GMT): 20%
+2023-Jan-21 18:54:44 (2023-Jan-21 16:54:44 GMT): 30%
+2023-Jan-21 18:54:44 (2023-Jan-21 16:54:44 GMT): 40%
+2023-Jan-21 18:54:44 (2023-Jan-21 16:54:44 GMT): 50%
+ ... Calculating internal and leakage power
+2023-Jan-21 18:54:44 (2023-Jan-21 16:54:44 GMT): 60%
+2023-Jan-21 18:54:44 (2023-Jan-21 16:54:44 GMT): 70%
+2023-Jan-21 18:54:44 (2023-Jan-21 16:54:44 GMT): 80%
+2023-Jan-21 18:54:44 (2023-Jan-21 16:54:44 GMT): 90%
+
+Finished Calculating power
+2023-Jan-21 18:54:45 (2023-Jan-21 16:54:45 GMT)
+Ended Power Computation: (cpu=0:00:00, real=0:00:00, mem(process/total/peak)=2128.98MB/5498.73MB/12475.09MB)
+
+Begin Processing User Attributes
+
+Ended Processing User Attributes: (cpu=0:00:00, real=0:00:00, mem(process/total/peak)=2128.98MB/5498.73MB/12475.09MB)
+
+Ended Power Analysis: (cpu=0:00:01, real=0:00:01, mem(process/total/peak)=2128.98MB/5498.73MB/12475.09MB)
+
+Begin Boundary Leakage Calculation
+Ended Boundary Leakage Calculation: (cpu=0:00:00, real=0:00:00,
+mem(process/total/peak)=2128.98MB/5498.73MB/12475.09MB)
+Begin Static Power Report Generation
+*----------------------------------------------------------------------------------------
+*	Innovus 19.11-s128_1 (64bit) 08/20/2019 20:54 (Linux 2.6.32-431.11.2.el6.x86_64)
+*	
+*
+* 	Date & Time:	2023-Jan-21 18:54:45 (2023-Jan-21 16:54:45 GMT)
+*
+*----------------------------------------------------------------------------------------
+*
+*	Design: example_module_pads
+*
+*	Liberty Libraries used:
+*	        default_emulate_view: ../../../../apps/prebuilt/eda/designkits/GPDK/gsclib045/lan/flow/t1u1/reference_libs/GPDK045/gsclib045_svt_v4.4/gsclib045/timing/fast_vdd1v0_basicCells.lib
+*
+*	Parasitic Files used:
+*
+*       Power View : default_emulate_view
+*
+*       User-Defined Activity : N.A.
+*
+*       Activity File: N.A.
+*
+*       Hierarchical Global Activity: N.A.
+*
+*       Global Activity: N.A.
+*
+*       Sequential Element Activity: 0.200000
+*
+*       Primary Input Activity: 0.200000
+*
+*       Default icg ratio: N.A.
+*
+*       Global Comb ClockGate Ratio: N.A.
+*
+*	Power Units = 1mW
+*
+*	Time Units = 1e-09 secs
+*
+*       report_power
+*
+-----------------------------------------------------------------------------------------
+  111 instances have no static power
+*
+
+
+
+Total Power
+-----------------------------------------------------------------------------------------
+Total Internal Power:        1.12555011 	   25.1051%
+Total Switching Power:       3.35550910 	   74.8438%
+Total Leakage Power:         0.00229031 	    0.0511%
+Total Power:                 4.48334952
+-----------------------------------------------------------------------------------------
+
+
+Group                           Internal   Switching     Leakage       Total  Percentage 
+                                Power      Power         Power         Power  (%)        
+-----------------------------------------------------------------------------------------
+Sequential                        0.6987       0.117   0.0006725      0.8164       18.21
+Macro                                  0        1.05           0        1.05       23.41
+IO                                     0           0           0           0           0
+Combinational                     0.4268       2.189    0.001618       2.617       58.38
+Clock (Combinational)                  0           0           0           0           0
+Clock (Sequential)                     0           0           0           0           0
+-----------------------------------------------------------------------------------------
+Total                              1.126       3.356     0.00229       4.483         100
+-----------------------------------------------------------------------------------------
+
+
+Rail                  Voltage   Internal   Switching     Leakage       Total  Percentage 
+                                Power      Power         Power         Power  (%)        
+-----------------------------------------------------------------------------------------
+VDD                       1.1      1.126       3.356     0.00229       4.483         100
+ 
+ 
+-----------------------------------------------------------------------------------------
+*	Power Distribution Summary: 
+*              Highest Average Power:                   pad_clk (PADDB):            0.193
+*              Highest Leakage Power: picorv32_example/fopt184451 (BUFX20):        1.034e-06
+*                Total Cap:      2.30979e-10 F
+*                Total instances in design: 12534
+*                Total instances in design with no power:   111
+*                Total instances in design with no activty:    79
+
+*                Total Fillers and Decap:   111
+-----------------------------------------------------------------------------------------
+ 
+Ended Static Power Report Generation: (cpu=0:00:00, real=0:00:00,
+mem(process/total/peak)=2132.06MB/5498.73MB/12475.09MB)
+
