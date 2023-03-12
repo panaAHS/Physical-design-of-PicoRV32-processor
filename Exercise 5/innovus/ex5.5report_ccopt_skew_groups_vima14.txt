@@ -1,0 +1,301 @@
+Clock tree timing engine global stage delay update for default_emulate_delay_corner:setup.early...
+Clock tree timing engine global stage delay update for default_emulate_delay_corner:setup.early done. (took cpu=0:00:00.1 real=0:00:00.1)
+Clock tree timing engine global stage delay update for default_emulate_delay_corner:setup.late...
+Clock tree timing engine global stage delay update for default_emulate_delay_corner:setup.late done. (took cpu=0:00:00.0 real=0:00:00.0)
+Clock tree timing engine global stage delay update for default_emulate_delay_corner:hold.early...
+Clock tree timing engine global stage delay update for default_emulate_delay_corner:hold.early done. (took cpu=0:00:00.0 real=0:00:00.0)
+Clock tree timing engine global stage delay update for default_emulate_delay_corner:hold.late...
+Clock tree timing engine global stage delay update for default_emulate_delay_corner:hold.late done. (took cpu=0:00:00.0 real=0:00:00.0)
+
+Skew Group Structure:
+=====================
+
+------------------------------------------------------------------------------------------
+Skew Group                             Sources    Constrained Sinks    Unconstrained Sinks
+------------------------------------------------------------------------------------------
+clk/default_emulate_constraint_mode       1             1960                    0
+------------------------------------------------------------------------------------------
+
+Skew Group Summary:
+===================
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Timing Corner                               Skew Group                             ID Target    Min ID    Max ID    Avg ID    Std.Dev. ID    Skew Target Type    Skew Target    Skew     Skew window occupancy
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+default_emulate_delay_corner:setup.early    clk/default_emulate_constraint_mode        -        0.427     0.452     0.437        0.007       ignored                  -         0.025              -
+default_emulate_delay_corner:setup.late     clk/default_emulate_constraint_mode    none         0.444     0.470     0.455        0.008       explicit             0.100         0.026    100% {0.444, 0.470}
+default_emulate_delay_corner:hold.early     clk/default_emulate_constraint_mode        -        0.427     0.452     0.437        0.007       ignored                  -         0.025              -
+default_emulate_delay_corner:hold.late      clk/default_emulate_constraint_mode        -        0.444     0.470     0.455        0.008       ignored                  -         0.026              -
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+* - indicates that target was not met.
+
+Skew Group Min/Max path pins:
+=============================
+
+-----------------------------------------------------------------------------------------------------------------------
+Timing Corner                               Skew Group                             Min ID    PathID    Max ID    PathID
+-----------------------------------------------------------------------------------------------------------------------
+default_emulate_delay_corner:setup.early    clk/default_emulate_constraint_mode    0.427       1       0.452       2
+-    min reg_op2_reg[28]/CK
+-    max cpuregs_reg[13][9]/CK
+default_emulate_delay_corner:setup.late     clk/default_emulate_constraint_mode    0.444       3       0.470       4
+-    min reg_op2_reg[28]/CK
+-    max cpuregs_reg[13][9]/CK
+default_emulate_delay_corner:hold.early     clk/default_emulate_constraint_mode    0.427       5       0.452       6
+-    min reg_op2_reg[28]/CK
+-    max cpuregs_reg[13][9]/CK
+default_emulate_delay_corner:hold.late      clk/default_emulate_constraint_mode    0.444       7       0.470       8
+-    min reg_op2_reg[28]/CK
+-    max cpuregs_reg[13][9]/CK
+-----------------------------------------------------------------------------------------------------------------------
+
+Timing for timing corner default_emulate_delay_corner:setup.early, min clock_path:
+==================================================================================
+
+PathID    : 1
+Path type : skew group clk/default_emulate_constraint_mode (path 1 of 1)
+Start     : clk
+End       : reg_op2_reg[28]/CK
+Delay     : 0.427
+
+-----------------------------------------------------------------------------------------------
+Name  Lib cell  Event  Incr   Arrival  Slew   Cap    Location          Distance  Fanout  Status
+                       (ns)   (ns)     (ns)   (pF)                     (um)              
+-- Clockpath trace ----------------------------------------------------------------------------
+clk
+-     -         rise   -       0.000   0.031  0.005  (111.500,0.000)   -            1    
+CTS_ccl_a_buf_00281/A
+-     CLKBUFX4  rise   0.000   0.000   0.031  -      (113.630,63.740)   65.870   -       
+CTS_ccl_a_buf_00281/Y
+-     CLKBUFX4  rise   0.115   0.115   0.076  0.012  (113.360,64.120)    0.650      5    
+CTS_ccl_a_buf_00276/A
+-     CLKBUFX4  rise   0.000   0.115   0.076  -      (120.030,63.740)    7.050   -       
+CTS_ccl_a_buf_00276/Y
+-     CLKBUFX4  rise   0.146   0.262   0.092  0.015  (119.760,64.120)    0.650     11    
+CTS_ccl_a_buf_00201/A
+-     CLKBUFX4  rise   0.000   0.262   0.092  -      (121.830,60.320)    5.870   -       
+CTS_ccl_a_buf_00201/Y
+-     CLKBUFX4  rise   0.165   0.427   0.110  0.018  (121.560,60.700)    0.650     39    
+reg_op2_reg[28]/CK
+-     DFFHQX1   rise   0.000   0.427   0.110  -      (125.875,60.070)    4.945   -       
+-----------------------------------------------------------------------------------------------
+
+Timing for timing corner default_emulate_delay_corner:setup.early, max clock_path:
+==================================================================================
+
+PathID    : 2
+Path type : skew group clk/default_emulate_constraint_mode (path 1 of 1)
+Start     : clk
+End       : cpuregs_reg[7][30]/CK
+Delay     : 0.452
+
+-----------------------------------------------------------------------------------------------
+Name  Lib cell  Event  Incr   Arrival  Slew   Cap    Location          Distance  Fanout  Status
+                       (ns)   (ns)     (ns)   (pF)                     (um)              
+-- Clockpath trace ----------------------------------------------------------------------------
+clk
+-     -         rise   -       0.000   0.031  0.005  (111.500,0.000)   -            1    
+CTS_ccl_a_buf_00281/A
+-     CLKBUFX4  rise   0.000   0.000   0.031  -      (113.630,63.740)   65.870   -       
+CTS_ccl_a_buf_00281/Y
+-     CLKBUFX4  rise   0.115   0.115   0.076  0.012  (113.360,64.120)    0.650      5    
+CTS_ccl_a_buf_00272/A
+-     CLKBUFX4  rise   0.000   0.116   0.076  -      (126.630,82.560)   31.710   -       
+CTS_ccl_a_buf_00272/Y
+-     CLKBUFX4  rise   0.157   0.272   0.110  0.018  (126.360,82.180)    0.650     11    
+CTS_ccl_a_buf_00225/A
+-     CLKBUFX4  rise   0.001   0.273   0.110  -      (198.630,91.100)   81.190   -       
+CTS_ccl_a_buf_00225/Y
+-     CLKBUFX4  rise   0.179   0.452   0.119  0.020  (198.360,91.480)    0.650     43    
+cpuregs_reg[7][30]/CK
+-     DFFHQX1   rise   0.001   0.452   0.119  -      (218.475,77.170)   34.425   -       
+-----------------------------------------------------------------------------------------------
+
+Timing for timing corner default_emulate_delay_corner:setup.late, min clock_path:
+=================================================================================
+
+PathID    : 3
+Path type : skew group clk/default_emulate_constraint_mode (path 1 of 1)
+Start     : clk
+End       : reg_op2_reg[28]/CK
+Delay     : 0.444
+
+-----------------------------------------------------------------------------------------------
+Name  Lib cell  Event  Incr   Arrival  Slew   Cap    Location          Distance  Fanout  Status
+                       (ns)   (ns)     (ns)   (pF)                     (um)              
+-- Clockpath trace ----------------------------------------------------------------------------
+clk
+-     -         rise   -       0.000   0.062  0.005  (111.500,0.000)   -            1    
+CTS_ccl_a_buf_00281/A
+-     CLKBUFX4  rise   0.000   0.000   0.062  -      (113.630,63.740)   65.870   -       
+CTS_ccl_a_buf_00281/Y
+-     CLKBUFX4  rise   0.131   0.131   0.077  0.012  (113.360,64.120)    0.650      5    
+CTS_ccl_a_buf_00276/A
+-     CLKBUFX4  rise   0.000   0.132   0.077  -      (120.030,63.740)    7.050   -       
+CTS_ccl_a_buf_00276/Y
+-     CLKBUFX4  rise   0.147   0.279   0.092  0.015  (119.760,64.120)    0.650     11    
+CTS_ccl_a_buf_00201/A
+-     CLKBUFX4  rise   0.000   0.279   0.092  -      (121.830,60.320)    5.870   -       
+CTS_ccl_a_buf_00201/Y
+-     CLKBUFX4  rise   0.165   0.444   0.111  0.018  (121.560,60.700)    0.650     39    
+reg_op2_reg[28]/CK
+-     DFFHQX1   rise   0.000   0.444   0.111  -      (125.875,60.070)    4.945   -       
+-----------------------------------------------------------------------------------------------
+
+Timing for timing corner default_emulate_delay_corner:setup.late, max clock_path:
+=================================================================================
+
+PathID    : 4
+Path type : skew group clk/default_emulate_constraint_mode (path 1 of 1)
+Start     : clk
+End       : cpuregs_reg[7][30]/CK
+Delay     : 0.470
+
+-----------------------------------------------------------------------------------------------
+Name  Lib cell  Event  Incr   Arrival  Slew   Cap    Location          Distance  Fanout  Status
+                       (ns)   (ns)     (ns)   (pF)                     (um)              
+-- Clockpath trace ----------------------------------------------------------------------------
+clk
+-     -         rise   -       0.000   0.062  0.005  (111.500,0.000)   -            1    
+CTS_ccl_a_buf_00281/A
+-     CLKBUFX4  rise   0.000   0.000   0.062  -      (113.630,63.740)   65.870   -       
+CTS_ccl_a_buf_00281/Y
+-     CLKBUFX4  rise   0.131   0.131   0.077  0.012  (113.360,64.120)    0.650      5    
+CTS_ccl_a_buf_00272/A
+-     CLKBUFX4  rise   0.000   0.132   0.077  -      (126.630,82.560)   31.710   -       
+CTS_ccl_a_buf_00272/Y
+-     CLKBUFX4  rise   0.157   0.289   0.111  0.018  (126.360,82.180)    0.650     11    
+CTS_ccl_a_buf_00225/A
+-     CLKBUFX4  rise   0.001   0.290   0.111  -      (198.630,91.100)   81.190   -       
+CTS_ccl_a_buf_00225/Y
+-     CLKBUFX4  rise   0.180   0.470   0.121  0.020  (198.360,91.480)    0.650     43    
+cpuregs_reg[7][30]/CK
+-     DFFHQX1   rise   0.001   0.470   0.121  -      (218.475,77.170)   34.425   -       
+-----------------------------------------------------------------------------------------------
+
+Timing for timing corner default_emulate_delay_corner:hold.early, min clock_path:
+=================================================================================
+
+PathID    : 5
+Path type : skew group clk/default_emulate_constraint_mode (path 1 of 1)
+Start     : clk
+End       : reg_op2_reg[28]/CK
+Delay     : 0.427
+
+-----------------------------------------------------------------------------------------------
+Name  Lib cell  Event  Incr   Arrival  Slew   Cap    Location          Distance  Fanout  Status
+                       (ns)   (ns)     (ns)   (pF)                     (um)              
+-- Clockpath trace ----------------------------------------------------------------------------
+clk
+-     -         rise   -       0.000   0.031  0.005  (111.500,0.000)   -            1    
+CTS_ccl_a_buf_00281/A
+-     CLKBUFX4  rise   0.000   0.000   0.031  -      (113.630,63.740)   65.870   -       
+CTS_ccl_a_buf_00281/Y
+-     CLKBUFX4  rise   0.115   0.115   0.076  0.012  (113.360,64.120)    0.650      5    
+CTS_ccl_a_buf_00276/A
+-     CLKBUFX4  rise   0.000   0.115   0.076  -      (120.030,63.740)    7.050   -       
+CTS_ccl_a_buf_00276/Y
+-     CLKBUFX4  rise   0.146   0.262   0.092  0.015  (119.760,64.120)    0.650     11    
+CTS_ccl_a_buf_00201/A
+-     CLKBUFX4  rise   0.000   0.262   0.092  -      (121.830,60.320)    5.870   -       
+CTS_ccl_a_buf_00201/Y
+-     CLKBUFX4  rise   0.165   0.427   0.110  0.018  (121.560,60.700)    0.650     39    
+reg_op2_reg[28]/CK
+-     DFFHQX1   rise   0.000   0.427   0.110  -      (125.875,60.070)    4.945   -       
+-----------------------------------------------------------------------------------------------
+
+Timing for timing corner default_emulate_delay_corner:hold.early, max clock_path:
+=================================================================================
+
+PathID    : 6
+Path type : skew group clk/default_emulate_constraint_mode (path 1 of 1)
+Start     : clk
+End       : cpuregs_reg[7][30]/CK
+Delay     : 0.452
+
+-----------------------------------------------------------------------------------------------
+Name  Lib cell  Event  Incr   Arrival  Slew   Cap    Location          Distance  Fanout  Status
+                       (ns)   (ns)     (ns)   (pF)                     (um)              
+-- Clockpath trace ----------------------------------------------------------------------------
+clk
+-     -         rise   -       0.000   0.031  0.005  (111.500,0.000)   -            1    
+CTS_ccl_a_buf_00281/A
+-     CLKBUFX4  rise   0.000   0.000   0.031  -      (113.630,63.740)   65.870   -       
+CTS_ccl_a_buf_00281/Y
+-     CLKBUFX4  rise   0.115   0.115   0.076  0.012  (113.360,64.120)    0.650      5    
+CTS_ccl_a_buf_00272/A
+-     CLKBUFX4  rise   0.000   0.116   0.076  -      (126.630,82.560)   31.710   -       
+CTS_ccl_a_buf_00272/Y
+-     CLKBUFX4  rise   0.157   0.272   0.110  0.018  (126.360,82.180)    0.650     11    
+CTS_ccl_a_buf_00225/A
+-     CLKBUFX4  rise   0.001   0.273   0.110  -      (198.630,91.100)   81.190   -       
+CTS_ccl_a_buf_00225/Y
+-     CLKBUFX4  rise   0.179   0.452   0.119  0.020  (198.360,91.480)    0.650     43    
+cpuregs_reg[7][30]/CK
+-     DFFHQX1   rise   0.001   0.452   0.119  -      (218.475,77.170)   34.425   -       
+-----------------------------------------------------------------------------------------------
+
+Timing for timing corner default_emulate_delay_corner:hold.late, min clock_path:
+================================================================================
+
+PathID    : 7
+Path type : skew group clk/default_emulate_constraint_mode (path 1 of 1)
+Start     : clk
+End       : reg_op2_reg[28]/CK
+Delay     : 0.444
+
+-----------------------------------------------------------------------------------------------
+Name  Lib cell  Event  Incr   Arrival  Slew   Cap    Location          Distance  Fanout  Status
+                       (ns)   (ns)     (ns)   (pF)                     (um)              
+-- Clockpath trace ----------------------------------------------------------------------------
+clk
+-     -         rise   -       0.000   0.062  0.005  (111.500,0.000)   -            1    
+CTS_ccl_a_buf_00281/A
+-     CLKBUFX4  rise   0.000   0.000   0.062  -      (113.630,63.740)   65.870   -       
+CTS_ccl_a_buf_00281/Y
+-     CLKBUFX4  rise   0.131   0.131   0.077  0.012  (113.360,64.120)    0.650      5    
+CTS_ccl_a_buf_00276/A
+-     CLKBUFX4  rise   0.000   0.132   0.077  -      (120.030,63.740)    7.050   -       
+CTS_ccl_a_buf_00276/Y
+-     CLKBUFX4  rise   0.147   0.279   0.092  0.015  (119.760,64.120)    0.650     11    
+CTS_ccl_a_buf_00201/A
+-     CLKBUFX4  rise   0.000   0.279   0.092  -      (121.830,60.320)    5.870   -       
+CTS_ccl_a_buf_00201/Y
+-     CLKBUFX4  rise   0.165   0.444   0.111  0.018  (121.560,60.700)    0.650     39    
+reg_op2_reg[28]/CK
+-     DFFHQX1   rise   0.000   0.444   0.111  -      (125.875,60.070)    4.945   -       
+-----------------------------------------------------------------------------------------------
+
+Timing for timing corner default_emulate_delay_corner:hold.late, max clock_path:
+================================================================================
+
+PathID    : 8
+Path type : skew group clk/default_emulate_constraint_mode (path 1 of 1)
+Start     : clk
+End       : cpuregs_reg[7][30]/CK
+Delay     : 0.470
+
+-----------------------------------------------------------------------------------------------
+Name  Lib cell  Event  Incr   Arrival  Slew   Cap    Location          Distance  Fanout  Status
+                       (ns)   (ns)     (ns)   (pF)                     (um)              
+-- Clockpath trace ----------------------------------------------------------------------------
+clk
+-     -         rise   -       0.000   0.062  0.005  (111.500,0.000)   -            1    
+CTS_ccl_a_buf_00281/A
+-     CLKBUFX4  rise   0.000   0.000   0.062  -      (113.630,63.740)   65.870   -       
+CTS_ccl_a_buf_00281/Y
+-     CLKBUFX4  rise   0.131   0.131   0.077  0.012  (113.360,64.120)    0.650      5    
+CTS_ccl_a_buf_00272/A
+-     CLKBUFX4  rise   0.000   0.132   0.077  -      (126.630,82.560)   31.710   -       
+CTS_ccl_a_buf_00272/Y
+-     CLKBUFX4  rise   0.157   0.289   0.111  0.018  (126.360,82.180)    0.650     11    
+CTS_ccl_a_buf_00225/A
+-     CLKBUFX4  rise   0.001   0.290   0.111  -      (198.630,91.100)   81.190   -       
+CTS_ccl_a_buf_00225/Y
+-     CLKBUFX4  rise   0.180   0.470   0.121  0.020  (198.360,91.480)    0.650     43    
+cpuregs_reg[7][30]/CK
+-     DFFHQX1   rise   0.001   0.470   0.121  -      (218.475,77.170)   34.425   -       
+-----------------------------------------------------------------------------------------------
+
+
