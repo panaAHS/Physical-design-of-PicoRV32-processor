@@ -1,0 +1,96 @@
+
+Design Name
+===========
+    picorv32
+
+Scan Style
+==========
+    muxed_scan
+Design has a valid DFT rule check status
+
+Global Constraints
+==================
+    Minimum number of scan chains: no_value
+    Maximum length of scan chains: no_value
+    Lock-up element type: preferred_level_sensitive
+    Mix clock edges in scan chain: true
+    Prefix for unnamed scan objects: DFT_
+
+Test signal objects
+===================
+    shift_enable: 
+          object name: se 
+          pin name: se 
+          hookup_pin: se 
+          hookup_polarity: non_inverted 
+          function: shift_enable 
+          active: high 
+          ideal: false 
+          user defined: true
+
+    test_mode: 
+          object name: test_mode 
+          pin name: test_mode 
+          hookup_pin: test_mode 
+          hookup_polarity: non_inverted 
+          function: test_mode 
+          active: high 
+          ideal: false 
+          user defined: true
+
+
+Test clock objects
+==================
+    test_clock:
+          object name: scanclk 
+          test_clock_domain: scanclk 
+          user defined: true 
+          source: clk  
+          root source: clk  
+          root source polarity: non_inverting
+          hookup_pin: clk 
+          period: 20000.0
+
+
+DFT controllable objects
+========================
+
+DFT don't scan objects
+======================
+
+DFT abstract don't scan objects
+===============================
+
+DFT scan segment constraints
+============================
+
+DFT scan chain constraints
+==========================
+    User Chain: 
+          object name: top_chain 
+          scan-in: scan_in 
+          scan-in hookup_pin: scan_in
+          scan-out: scan_out 
+          scan-out hookup_pin: scan_out
+          shared out: false 
+          shift_enable object name: se 
+          max length: no_value
+          complete: false
+
+
+DFT actual scan chains
+======================
+    Actual Chain:
+          object name: top_chain 
+          scan-in: scan_in 
+          scan-in hookup_pin: scan_in 
+          scan-out: scan_out 
+          scan-out hookup_pin: scan_out 
+          shared out: false
+          shift_enable: se 
+          length: 1961
+          segment objects: none
+          analyzed: false
+          test_clock domain: scanclk
+          test_clock edge: rise
+

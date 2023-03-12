@@ -1,0 +1,80 @@
+# Cadence Genus(TM) Synthesis Solution, Version 19.11-s087_1, built Aug 13 2019 11:48:07
+
+# Date: Sun Dec 25 09:18:26 2022
+# Host: cn98.it.auth.gr (x86_64 w/Linux 3.10.0-1160.81.1.el7.x86_64) (1core*12cpus*23physical cpus*Intel(R) Xeon(R) Gold 6230 CPU @ 2.10GHz 28160KB)
+# OS:   CentOS Linux release 7.9.2009 (Core)
+
+source run.tcl
+read_qrc "/mnt/apps/prebuilt/eda/designkits/GPDK/gsclib045/lan/flow/t1u1/reference_libs/GPDK045/gsclib045_svt_v4.4/gsclib045/qrc/qx/gpdk045.tch"read_hdl picorv32.v
+read_qrc "/mnt/apps/prebuilt/eda/designkits/GPDK/gsclib045/lan/flow/t1u1/reference_libs/GPDK045/gsclib045_svt_v4.4/gsclib045/qrc/qx/gpdk045.tch"
+read_hdl picorv32.v
+elaborate "picorv32"
+check_design -all
+read_sdc synthesis_constraints.sdc
+check_timing_intent
+set_db / .dft_scan_style muxed_scan
+set_db / .dft_prefix DFT_
+set_db / .dft_identify_top_level_test_clocks true
+set_db / .dft_identify_test_signals true
+set_db / .dft_identify_internal_test_clocks false
+set_db / .use_scan_seqs_for_non_dft false
+set_db "design:<design_name>" .dft_scan_map_mode tdrc_pass
+set_db "design:<picorv32>" .dft_scan_map_mode tdrc_pass
+set_db "design:picorv32" .dft_scan_map_mode tdrc_pass
+set_db "design:<design_name>"\ .dft_connect_shift_enable_during_mapping tie_off
+set_db "design:picorv32"\ .dft_connect_shift_enable_during_mapping tie_off
+set_db "design:picorv32"\.dft_connect_shift_enable_during_mapping tie_off
+set_db "design:picorv32" .dft_connect_shift_enable_during_mapping tie_off
+set_db "design:picorv32" .dft_connect_scan_data_pins_during_mapping loopback
+set_db "design:picorv32" .dft_scan_output_preference auto
+set_db "design:picorv32" .dft_lockup_element_type preferred_level_sensitive
+set_db "design:picorv32" .dft_mix_clock_edges_in_scan_chains true
+define_test_clock -name scanclk -period 20000 clk
+define_shift_enable -name se -active high -create_port se
+define_test_mode -name test_mode -active high -create_port test_mode
+define_scan_chain -name top_chain -sdi scan_in -sdo scan_out -shift_enable se -create_ports
+check_dft_rules
+report_scan_registers
+report_scan_registers > ex9_report_scan_registers.txt
+report_scan_setup > ex9_report_scan_setup.txt
+check_dft_rules -advanced
+check_design -undriven -report_scan_pins
+connect_scan_chains -auto_create_chains
+report_scan_chains > ex9_report_scan_chains.txt
+report_scan_chains
+check_dft_rules
+report_scan_registers
+check_timing_intent
+read_sdc synthesis_constraints.sdc
+check_timing_intent
+check_dft_rules
+report_scan_registers
+report_scan_setup > ex9_report_scan_setup.txt
+check_dft_rules -advanced
+check_design -undriven -report_scan_pins
+check_timing_intent
+syn_generic
+report_qor > ex9_syn_gen_report_qor.txt
+report_area > ex9_syn_gen_report_area_step6.txt
+report_timing > ex9_syn_gen_report_timing_step6.txt
+report_gates > ex9_syn_gen_report_gates_step6.txt
+report_power > ex9_syn_gen_report_power_step6.txt
+syn_map
+report_qor > ex9_syn_map_report_qor.txt
+report_area > ex9_syn_map_report_area_step6.txt
+report_timing > ex9_syn_map_report_timing_step6.txt
+report_gates > ex9_syn_map_report_gates_step6.txt
+report_power > ex9_syn_map_report_power_step6.txt
+syn_opt
+report_qor > ex9__report_qor.txt
+report_area > ex9_report_area_step6.txt
+report_timing > ex9_report_timing_step6.txt
+report_gates > ex9_report_gates_step6.txt
+report_power > ex9_report_power_step6.txt
+check_dft_rules -advanced
+check_design -undriven -report_scan_pins
+connect_scan_chains -auto_create_chains
+report_scan_chains
+report_scan_chains > ex9_report_scan_chains.txt
+report_scan_setup
+report_scan_setup > ex9_report_scan_setup.txt
