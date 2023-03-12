@@ -1,0 +1,23 @@
+# Cadence Genus(TM) Synthesis Solution, Version 19.11-s087_1, built Aug 13 2019 11:48:07
+
+# Date: Sat Dec 03 12:25:45 2022
+# Host: cn94.it.auth.gr (x86_64 w/Linux 3.10.0-1160.76.1.el7.x86_64) (1core*12cpus*23physical cpus*AMD EPYC 7352 24-Core Processor 512KB)
+# OS:   CentOS Linux release 7.9.2009 (Core)
+
+source run.tcl
+read_qrc "/mnt/apps/prebuilt/eda/designkits/GPDK/gsclib045/lan/flow/t1u1/reference_libs/GPDK045/gsclib045_svt_v4.4/gsclib045/qrc/qx/gpdk045.tch"
+read_hdl picorv32.v
+elaborate "picorv32"
+check_design -all
+synthesis_constraints_ex4.sdc
+set_db / .use_scan_seqs_for_non_dft false
+read_sdc synthesis_constraints_ex4.sdc
+check_timing_intent
+syn_generic
+syn_map
+syn_opt
+report_area > ex4_report_area_step6.txt
+report_timing > ex4_report_timing_step6.txt
+report_gates > ex4_report_gates_step6.txt
+report_power > ex4_report_power_step6.txt
+write_design -innovus picorv32
