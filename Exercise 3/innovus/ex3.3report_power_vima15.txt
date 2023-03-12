@@ -1,0 +1,387 @@
+Using Power View: default_emulate_view.
+AAE DB initialization (MEM=1638.14 CPU=0:00:00.3 REAL=0:00:00.0) 
+Starting SI iteration 1 using Infinite Timing Windows
+#################################################################################
+# Design Stage: PostRoute
+# Design Name: picorv32
+# Design Mode: 45nm
+# Analysis Mode: MMMC Non-OCV 
+# Parasitics Mode: No SPEF/RCDB
+# Signoff Settings: SI On 
+#################################################################################
+#num needed restored net=0
+#need_extraction net=0 (total=11822)
+#Start routing data preparation on Sun Dec  4 12:22:18 2022
+#
+#Minimum voltage of a net in the design = 0.000.
+#Maximum voltage of a net in the design = 1.100.
+#Voltage range [0.000 - 1.100] has 11747 nets.
+#Voltage range [0.000 - 0.000] has 74 nets.
+#Voltage range [1.100 - 1.100] has 1 net.
+# Metal1       H   Track-Pitch = 0.19000    Line-2-Via Pitch = 0.13000
+# Metal2       V   Track-Pitch = 0.20000    Line-2-Via Pitch = 0.15000
+# Metal3       H   Track-Pitch = 0.19000    Line-2-Via Pitch = 0.15000
+# Metal4       V   Track-Pitch = 0.20000    Line-2-Via Pitch = 0.15000
+# Metal5       H   Track-Pitch = 0.19000    Line-2-Via Pitch = 0.15000
+# Metal6       V   Track-Pitch = 0.20000    Line-2-Via Pitch = 0.15000
+# Metal7       H   Track-Pitch = 0.19000    Line-2-Via Pitch = 0.15000
+# Metal8       V   Track-Pitch = 0.20000    Line-2-Via Pitch = 0.15000
+# Metal9       H   Track-Pitch = 0.19000    Line-2-Via Pitch = 0.15000
+# Metal10      V   Track-Pitch = 0.50000    Line-2-Via Pitch = 0.42000
+# Metal11      H   Track-Pitch = 0.47500    Line-2-Via Pitch = 0.43000
+#Regenerating Ggrids automatically.
+#Auto generating G-grids with size=15 tracks, using layer Metal3's pitch = 0.19000.
+#Using automatically generated G-grids.
+#Done routing data preparation.
+#cpu time = 00:00:01, elapsed time = 00:00:01, memory = 1241.25 (MB), peak = 1400.59 (MB)
+#Extract in post route mode
+#
+#Start tQuantus RC extraction...
+#Start building rc corner(s)...
+#Number of RC Corner = 1
+#Corner default_emulate_rc_corner /mnt/eda_a/eda/designkits/GPDK/gsclib045/lan/flow/t1u1/reference_libs/GPDK045/gsclib045_svt_v4.4/gsclib045/qrc/qx/gpdk045.tch 0.000000 (real) 
+#METAL_1 -> Metal1 (1)
+#METAL_2 -> Metal2 (2)
+#METAL_3 -> Metal3 (3)
+#METAL_4 -> Metal4 (4)
+#METAL_5 -> Metal5 (5)
+#METAL_6 -> Metal6 (6)
+#METAL_7 -> Metal7 (7)
+#METAL_8 -> Metal8 (8)
+#METAL_9 -> Metal9 (9)
+#METAL_10 -> Metal10 (10)
+#METAL_11 -> Metal11 (11)
+#SADV_On
+# Corner(s) : 
+#default_emulate_rc_corner [ 0.00]
+# Corner id: 0
+# Layout Scale: 1.000000
+# Has Metal Fill model: yes
+# Temperature was set
+# Temperature : 0.000000
+# Ref. Temp   : 25.000000
+#SADV_Off
+#total pattern=286 [11, 792]
+#Reading previously stored rc_model file ( rc_model.bin ) ...
+#found CAPMODEL /mnt/eda_a/eda/designkits/GPDK/gsclib045/lan/flow/t1u1/reference_libs/GPDK045/gsclib045_svt_v4.4/gsclib045/qrc/qx/gpdk045.tch
+#found RESMODEL /mnt/eda_a/eda/designkits/GPDK/gsclib045/lan/flow/t1u1/reference_libs/GPDK045/gsclib045_svt_v4.4/gsclib045/qrc/qx/gpdk045.tch 0.000000 
+#number model r/c [1,1] [11,792] read
+#0 rcmodel(s) requires rebuild
+#Build RC corners: cpu time = 00:00:01, elapsed time = 00:00:04, memory = 1248.48 (MB), peak = 1400.59 (MB)
+#Start building rc corner(s)...
+#Number of RC Corner = 1
+#Corner default_emulate_rc_corner /mnt/eda_a/eda/designkits/GPDK/gsclib045/lan/flow/t1u1/reference_libs/GPDK045/gsclib045_svt_v4.4/gsclib045/qrc/qx/gpdk045.tch 0.000000 (real) 
+#METAL_1 -> Metal1 (1)
+#METAL_2 -> Metal2 (2)
+#METAL_3 -> Metal3 (3)
+#METAL_4 -> Metal4 (4)
+#METAL_5 -> Metal5 (5)
+#METAL_6 -> Metal6 (6)
+#METAL_7 -> Metal7 (7)
+#METAL_8 -> Metal8 (8)
+#METAL_9 -> Metal9 (9)
+#METAL_10 -> Metal10 (10)
+#METAL_11 -> Metal11 (11)
+#SADV_On
+# Corner(s) : 
+#default_emulate_rc_corner [ 0.00]
+# Corner id: 0
+# Layout Scale: 1.000000
+# Has Metal Fill model: yes
+# Temperature was set
+# Temperature : 0.000000
+# Ref. Temp   : 25.000000
+#SADV_Off
+#total pattern=286 [11, 792]
+#Reading previously stored rc_model file ( rc_model.bin ) ...
+#found CAPMODEL /mnt/eda_a/eda/designkits/GPDK/gsclib045/lan/flow/t1u1/reference_libs/GPDK045/gsclib045_svt_v4.4/gsclib045/qrc/qx/gpdk045.tch
+#found RESMODEL /mnt/eda_a/eda/designkits/GPDK/gsclib045/lan/flow/t1u1/reference_libs/GPDK045/gsclib045_svt_v4.4/gsclib045/qrc/qx/gpdk045.tch 0.000000 
+#number model r/c [1,1] [11,792] read
+#0 rcmodel(s) requires rebuild
+#Build RC corners: cpu time = 00:00:02, elapsed time = 00:00:04, memory = 1253.83 (MB), peak = 1400.59 (MB)
+#Length limit = 200 pitches
+#opt mode = 2
+#Start routing data preparation on Sun Dec  4 12:22:32 2022
+#
+#Minimum voltage of a net in the design = 0.000.
+#Maximum voltage of a net in the design = 1.100.
+#Voltage range [0.000 - 1.100] has 11747 nets.
+#Voltage range [0.000 - 0.000] has 74 nets.
+#Voltage range [1.100 - 1.100] has 1 net.
+#Regenerating Ggrids automatically.
+#Auto generating G-grids with size=15 tracks, using layer Metal3's pitch = 0.19000.
+#Using automatically generated G-grids.
+#Done routing data preparation.
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 1248.15 (MB), peak = 1400.59 (MB)
+#Start routing data preparation on Sun Dec  4 12:22:32 2022
+#
+#Minimum voltage of a net in the design = 0.000.
+#Maximum voltage of a net in the design = 1.100.
+#Voltage range [0.000 - 1.100] has 11747 nets.
+#Voltage range [0.000 - 0.000] has 74 nets.
+#Voltage range [1.100 - 1.100] has 1 net.
+#Regenerating Ggrids automatically.
+#Auto generating G-grids with size=15 tracks, using layer Metal3's pitch = 0.19000.
+#Using automatically generated G-grids.
+#Done routing data preparation.
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 1248.15 (MB), peak = 1400.59 (MB)
+#Init Design Signature = 1904851281
+#Start generate extraction boxes.
+#
+#Extract using 30 x 30 Hboxes
+#4x4 initial hboxes
+#Use area based hbox pruning.
+#0/0 hboxes pruned.
+#Complete generating extraction boxes.
+#Extract 9 hboxes with single thread on machine with  2.30GHz 512KB Cache 12CPU...
+#Process 0 special clock nets for rc extraction
+#0 temporary NDR added
+#Total 11625 nets were built. 163 nodes added to break long wires. 0 net(s) have incomplete routes.
+#Run Statistics for Extraction:
+#   Cpu time = 00:00:10, elapsed time = 00:00:10 .
+#   Increased memory =   109.17 (MB), total memory =  1357.82 (MB), peak memory =  1400.59 (MB)
+#Simplify RC tree: cpu time = 00:00:00, elapsed time = 00:00:00, memory = 1290.02 (MB), peak = 1400.59 (MB)
+#RC Statistics: 67829 Res, 36959 Ground Cap, 15232 XCap (Edge to Edge)
+#RC V/H edge ratio: 0.39, Avg V/H Edge Length: 3185.46 (38280), Avg L-Edge Length: 8133.03 (23086)
+#Start writing rcdb into /tmp/innovus_temp_95121_cn94.it.auth.gr_karamitopp_y0XgMd/nr95121_IMVwu2.rcdb.d
+#Finish writing rcdb with 79704 nodes, 68079 edges, and 31396 xcaps
+#cpu time = 00:00:01, elapsed time = 00:00:04, memory = 1298.30 (MB), peak = 1400.59 (MB)
+Restoring parasitic data from file '/tmp/innovus_temp_95121_cn94.it.auth.gr_karamitopp_y0XgMd/nr95121_IMVwu2.rcdb.d' ...
+Reading RCDB with compressed RC data.
+Reading RCDB with compressed RC data.
+Begin read_parasitics... (cpu: 0:00:00.0 real: 0:00:00.0 mem: 1692.879M)
+Following multi-corner parasitics specified:
+	/tmp/innovus_temp_95121_cn94.it.auth.gr_karamitopp_y0XgMd/nr95121_IMVwu2.rcdb.d (rcdb)
+Reading RCDB with compressed RC data.
+		Cell picorv32 has rcdb /tmp/innovus_temp_95121_cn94.it.auth.gr_karamitopp_y0XgMd/nr95121_IMVwu2.rcdb.d specified
+Cell picorv32, hinst 
+Reading RCDB with compressed RC data.
+Done read_parasitics... (cpu: 0:00:07.6 real: 0:00:07.0 mem: 1672.879M)
+#
+#Restore RCDB.
+#
+#Complete tQuantus RC extraction.
+#Cpu time = 00:00:27
+#Elapsed time = 00:00:36
+#Increased memory = 50.50 (MB)
+#Total memory = 1291.75 (MB)
+#Peak memory = 1400.59 (MB)
+#
+#163 inserted nodes are removed
+#Final Design Signature = 1904851281
+AAE_INFO: 1 threads acquired from CTE.
+Calculate delays in Single mode...
+Start delay calculation (fullDC) (1 T). (MEM=1642.52)
+siFlow : Timing analysis mode is single, using late cdB files
+siFlow : Timing analysis mode is single, using late cdB files
+Reading RCDB with compressed RC data.
+Total number of fetched objects 11626
+AAE_INFO: Total number of nets for which stage creation was skipped for all views 0
+AAE_INFO-618: Total number of nets in the design is 11822,  98.3 percent of the nets selected for SI analysis
+End delay calculation. (MEM=1726.09 CPU=0:00:02.9 REAL=0:00:02.0)
+End delay calculation (fullDC). (MEM=1708.55 CPU=0:00:03.5 REAL=0:00:03.0)
+Loading CTE timing window with TwFlowType 0...(CPU = 0:00:00.0, REAL = 0:00:00.0, MEM = 1708.6M)
+Add other clocks and setupCteToAAEClockMapping during iter 1
+Loading CTE timing window is completed (CPU = 0:00:00.1, REAL = 0:00:00.0, MEM = 1708.6M)
+Starting SI iteration 2
+Calculate delays in Single mode...
+Start delay calculation (fullDC) (1 T). (MEM=1665.55)
+Total number of fetched objects 11626
+AAE_INFO: Total number of nets for which stage creation was skipped for all views 0
+AAE_INFO-618: Total number of nets in the design is 11822,  0.2 percent of the nets selected for SI analysis
+End delay calculation. (MEM=1671.7 CPU=0:00:00.1 REAL=0:00:00.0)
+End delay calculation (fullDC). (MEM=1671.7 CPU=0:00:00.2 REAL=0:00:00.0)
+Load RC corner of view default_emulate_view
+
+Begin Power Analysis
+
+    0.00V	    VSS
+    1.10V	    VDD
+
+Begin Processing Timing Library for Power Calculation
+
+Begin Processing Timing Library for Power Calculation
+
+
+
+Begin Processing Power Net/Grid for Power Calculation
+
+Ended Processing Power Net/Grid for Power Calculation: (cpu=0:00:00, real=0:00:00, mem(process/total/peak)=1294.00MB/2657.62MB/1384.53MB)
+
+Begin Processing Timing Window Data for Power Calculation
+
+CK: assigning clock clk to net clk
+Ended Processing Timing Window Data for Power Calculation: (cpu=0:00:00, real=0:00:00, mem(process/total/peak)=1294.00MB/2657.62MB/1384.53MB)
+
+Begin Processing User Attributes
+
+Ended Processing User Attributes: (cpu=0:00:00, real=0:00:00, mem(process/total/peak)=1294.00MB/2657.62MB/1384.53MB)
+
+Begin Processing Signal Activity
+
+
+Starting Levelizing
+2022-Dec-04 12:23:01 (2022-Dec-04 10:23:01 GMT)
+2022-Dec-04 12:23:01 (2022-Dec-04 10:23:01 GMT): 10%
+2022-Dec-04 12:23:01 (2022-Dec-04 10:23:01 GMT): 20%
+2022-Dec-04 12:23:01 (2022-Dec-04 10:23:01 GMT): 30%
+2022-Dec-04 12:23:01 (2022-Dec-04 10:23:01 GMT): 40%
+2022-Dec-04 12:23:01 (2022-Dec-04 10:23:01 GMT): 50%
+2022-Dec-04 12:23:01 (2022-Dec-04 10:23:01 GMT): 60%
+2022-Dec-04 12:23:01 (2022-Dec-04 10:23:01 GMT): 70%
+2022-Dec-04 12:23:01 (2022-Dec-04 10:23:01 GMT): 80%
+2022-Dec-04 12:23:01 (2022-Dec-04 10:23:01 GMT): 90%
+
+Finished Levelizing
+2022-Dec-04 12:23:01 (2022-Dec-04 10:23:01 GMT)
+
+Starting Activity Propagation
+2022-Dec-04 12:23:01 (2022-Dec-04 10:23:01 GMT)
+2022-Dec-04 12:23:01 (2022-Dec-04 10:23:01 GMT): 10%
+2022-Dec-04 12:23:01 (2022-Dec-04 10:23:01 GMT): 20%
+
+Finished Activity Propagation
+2022-Dec-04 12:23:01 (2022-Dec-04 10:23:01 GMT)
+Ended Processing Signal Activity: (cpu=0:00:00, real=0:00:00, mem(process/total/peak)=1294.42MB/2657.62MB/1384.53MB)
+
+Begin Power Computation
+
+      ----------------------------------------------------------
+      # of cell(s) missing both power/leakage table: 0
+      # of cell(s) missing power table: 0
+      # of cell(s) missing leakage table: 0
+      # of MSMV cell(s) missing power_level: 0
+      ----------------------------------------------------------
+
+
+
+Starting Calculating power
+2022-Dec-04 12:23:01 (2022-Dec-04 10:23:01 GMT)
+ ... Calculating switching power
+2022-Dec-04 12:23:02 (2022-Dec-04 10:23:02 GMT): 10%
+2022-Dec-04 12:23:02 (2022-Dec-04 10:23:02 GMT): 20%
+2022-Dec-04 12:23:02 (2022-Dec-04 10:23:02 GMT): 30%
+2022-Dec-04 12:23:02 (2022-Dec-04 10:23:02 GMT): 40%
+2022-Dec-04 12:23:02 (2022-Dec-04 10:23:02 GMT): 50%
+ ... Calculating internal and leakage power
+2022-Dec-04 12:23:02 (2022-Dec-04 10:23:02 GMT): 60%
+2022-Dec-04 12:23:02 (2022-Dec-04 10:23:02 GMT): 70%
+2022-Dec-04 12:23:02 (2022-Dec-04 10:23:02 GMT): 80%
+2022-Dec-04 12:23:03 (2022-Dec-04 10:23:03 GMT): 90%
+
+Finished Calculating power
+2022-Dec-04 12:23:03 (2022-Dec-04 10:23:03 GMT)
+Ended Power Computation: (cpu=0:00:01, real=0:00:01, mem(process/total/peak)=1294.45MB/2657.62MB/1384.53MB)
+
+Begin Processing User Attributes
+
+Ended Processing User Attributes: (cpu=0:00:00, real=0:00:00, mem(process/total/peak)=1294.45MB/2657.62MB/1384.53MB)
+
+Ended Power Analysis: (cpu=0:00:02, real=0:00:02, mem(process/total/peak)=1294.45MB/2657.62MB/1384.53MB)
+
+Begin Boundary Leakage Calculation
+Ended Boundary Leakage Calculation: (cpu=0:00:00, real=0:00:00,
+mem(process/total/peak)=1294.45MB/2657.62MB/1384.53MB)
+Begin Static Power Report Generation
+*----------------------------------------------------------------------------------------
+*	Innovus 19.11-s128_1 (64bit) 08/20/2019 20:54 (Linux 2.6.32-431.11.2.el6.x86_64)
+*	
+*
+* 	Date & Time:	2022-Dec-04 12:23:03 (2022-Dec-04 10:23:03 GMT)
+*
+*----------------------------------------------------------------------------------------
+*
+*	Design: picorv32
+*
+*	Liberty Libraries used:
+*	        default_emulate_view: ../../../../apps/prebuilt/eda/designkits/GPDK/gsclib045/lan/flow/t1u1/reference_libs/GPDK045/gsclib045_svt_v4.4/gsclib045/timing/fast_vdd1v0_basicCells.lib
+*
+*	Parasitic Files used:
+*
+*       Power View : default_emulate_view
+*
+*       User-Defined Activity : N.A.
+*
+*       Activity File: N.A.
+*
+*       Hierarchical Global Activity: N.A.
+*
+*       Global Activity: N.A.
+*
+*       Sequential Element Activity: 0.200000
+*
+*       Primary Input Activity: 0.200000
+*
+*       Default icg ratio: N.A.
+*
+*       Global Comb ClockGate Ratio: N.A.
+*
+*	Power Units = 1mW
+*
+*	Time Units = 1e-09 secs
+*
+*       report_power
+*
+-----------------------------------------------------------------------------------------
+*
+
+
+
+Total Power
+-----------------------------------------------------------------------------------------
+Total Internal Power:        1.08590747 	   32.8668%
+Total Switching Power:       2.21601354 	   67.0713%
+Total Leakage Power:         0.00204620 	    0.0619%
+Total Power:                 3.30396721
+-----------------------------------------------------------------------------------------
+
+
+Group                           Internal   Switching     Leakage       Total  Percentage 
+                                Power      Power         Power         Power  (%)        
+-----------------------------------------------------------------------------------------
+Sequential                        0.6992      0.1048    0.000673      0.8047       24.35
+Macro                                  0           0           0           0           0
+IO                                     0           0           0           0           0
+Combinational                     0.3517       1.974     0.00136       2.328       70.45
+Clock (Combinational)            0.03502      0.1368   1.348e-05      0.1718       5.199
+Clock (Sequential)                     0           0           0           0           0
+-----------------------------------------------------------------------------------------
+Total                              1.086       2.216    0.002046       3.304         100
+-----------------------------------------------------------------------------------------
+
+
+Rail                  Voltage   Internal   Switching     Leakage       Total  Percentage 
+                                Power      Power         Power         Power  (%)        
+-----------------------------------------------------------------------------------------
+VDD                       1.1      1.086       2.216    0.002046       3.304         100
+
+
+Clock                           Internal   Switching     Leakage       Total  Percentage 
+                                Power      Power         Power         Power  (%)        
+-----------------------------------------------------------------------------------------
+clk                              0.03502      0.1368   1.348e-05      0.1718       5.199
+-----------------------------------------------------------------------------------------
+Total                            0.03502      0.1368   1.348e-05      0.1718       5.199
+-----------------------------------------------------------------------------------------
+Clock: clk
+Clock Period: 0.010000 usec 
+Clock Toggle Rate:   200.0000 Mhz 
+Clock Static Probability:  0.5000
+  
+ 
+ 
+-----------------------------------------------------------------------------------------
+*	Power Distribution Summary: 
+*              Highest Average Power:   FE_OFC468_mem_la_addr_2 (CLKINVX20):          0.01353
+*              Highest Leakage Power:     FE_OFC681_pcpi_rs1_25 (BUFX20):        1.034e-06
+*                Total Cap:      1.49517e-10 F
+*                Total instances in design: 10771
+*                Total instances in design with no power:     0
+*                Total instances in design with no activty:     0
+
+*                Total Fillers and Decap:     0
+-----------------------------------------------------------------------------------------
+ 
+Ended Static Power Report Generation: (cpu=0:00:00, real=0:00:00,
+mem(process/total/peak)=1298.27MB/2657.62MB/1384.53MB)
+
