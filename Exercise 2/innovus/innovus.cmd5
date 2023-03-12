@@ -1,0 +1,519 @@
+#######################################################
+#                                                     
+#  Innovus Command Logging File                     
+#  Created on Sat Dec 24 18:16:16 2022                
+#                                                     
+#######################################################
+
+#@(#)CDS: Innovus v19.11-s128_1 (64bit) 08/20/2019 20:54 (Linux 2.6.32-431.11.2.el6.x86_64)
+#@(#)CDS: NanoRoute 19.11-s128_1 NR190815-2055/19_11-UB (database version 18.20, 469.7.1) {superthreading v1.51}
+#@(#)CDS: AAE 19.11-s034 (64bit) 08/20/2019 (Linux 2.6.32-431.11.2.el6.x86_64)
+#@(#)CDS: CTE 19.11-s040_1 () Aug  1 2019 08:53:57 ( )
+#@(#)CDS: SYNTECH 19.11-e010_1 () Jul 15 2019 20:31:02 ( )
+#@(#)CDS: CPE v19.11-s006
+#@(#)CDS: IQuantus/TQuantus 19.1.2-s245 (64bit) Thu Aug 1 10:22:01 PDT 2019 (Linux 2.6.32-431.11.2.el6.x86_64)
+
+set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+suppressMessage ENCEXT-2799
+getVersion
+getVersion
+getVersion
+win
+set init_gnd_net VSS
+set init_lef_file {../../../../apps/prebuilt/eda/designkits/GPDK/gsclib045/lan/flow/t1u1/reference_libs/GPDK045/gsclib045_svt_v4.4/gsclib045/lef/gsclib045_tech.lef ../../../../apps/prebuilt/eda/designkits/GPDK/gsclib045/lan/flow/t1u1/reference_libs/GPDK045/gsclib045_svt_v4.4/gsclib045/lef/gsclib045_macro.lef}
+set init_design_settop 0
+set init_verilog genus_invs_des/kanoniko/genus.v
+set init_mmmc_file ex8/Default.view
+set init_pwr_net VDD
+init_design
+getIoFlowFlag
+setIoFlowFlag 0
+floorPlan -site CoreSite -r 0.992695867336 0.75 15 15 15 15
+uiSetTool select
+getIoFlowFlag
+fit
+set sprCreateIeRingOffset 1.0
+set sprCreateIeRingThreshold 1.0
+set sprCreateIeRingJogDistance 1.0
+set sprCreateIeRingLayers {}
+set sprCreateIeRingOffset 1.0
+set sprCreateIeRingThreshold 1.0
+set sprCreateIeRingJogDistance 1.0
+set sprCreateIeRingLayers {}
+set sprCreateIeStripeWidth 10.0
+set sprCreateIeStripeThreshold 1.0
+set sprCreateIeStripeWidth 10.0
+set sprCreateIeStripeThreshold 1.0
+set sprCreateIeRingOffset 1.0
+set sprCreateIeRingThreshold 1.0
+set sprCreateIeRingJogDistance 1.0
+set sprCreateIeRingLayers {}
+set sprCreateIeStripeWidth 10.0
+set sprCreateIeStripeThreshold 1.0
+setAddRingMode -ring_target default -extend_over_row 0 -ignore_rows 0 -avoid_short 0 -skip_crossing_trunks none -stacked_via_top_layer Metal11 -stacked_via_bottom_layer Metal1 -via_using_exact_crossover_size 1 -orthogonal_only true -skip_via_on_pin {  standardcell } -skip_via_on_wire_shape {  noshape }
+addRing -nets {VDD VSS} -type core_rings -follow core -layer {top Metal11 bottom Metal11 left Metal10 right Metal10} -width {top 3 bottom 3 left 3 right 3} -spacing {top 3 bottom 3 left 3 right 3} -offset {top 1.8 bottom 1.8 left 1.8 right 1.8} -center 1 -threshold 0 -jog_distance 0 -snap_wire_center_to_grid None
+set sprCreateIeRingOffset 1.0
+set sprCreateIeRingThreshold 1.0
+set sprCreateIeRingJogDistance 1.0
+set sprCreateIeRingLayers {}
+set sprCreateIeRingOffset 1.0
+set sprCreateIeRingThreshold 1.0
+set sprCreateIeRingJogDistance 1.0
+set sprCreateIeRingLayers {}
+set sprCreateIeStripeWidth 10.0
+set sprCreateIeStripeThreshold 1.0
+set sprCreateIeStripeWidth 10.0
+set sprCreateIeStripeThreshold 1.0
+set sprCreateIeRingOffset 1.0
+set sprCreateIeRingThreshold 1.0
+set sprCreateIeRingJogDistance 1.0
+set sprCreateIeRingLayers {}
+set sprCreateIeStripeWidth 10.0
+set sprCreateIeStripeThreshold 1.0
+setAddStripeMode -ignore_block_check false -break_at none -route_over_rows_only false -rows_without_stripes_only false -extend_to_closest_target none -stop_at_last_wire_for_area false -partial_set_thru_domain false -ignore_nondefault_domains false -trim_antenna_back_to_shape none -spacing_type edge_to_edge -spacing_from_block 0 -stripe_min_length stripe_width -stacked_via_top_layer Metal11 -stacked_via_bottom_layer Metal1 -via_using_exact_crossover_size false -split_vias false -orthogonal_only true -allow_jog { padcore_ring  block_ring } -skip_via_on_pin {  standardcell } -skip_via_on_wire_shape {  noshape   }
+addStripe -nets {VDD VSS} -layer Metal11 -direction horizontal -width 3 -spacing 3 -number_of_sets 3 -start_from bottom -switch_layer_over_obs false -max_same_layer_jog_length 2 -padcore_ring_top_layer_limit Metal11 -padcore_ring_bottom_layer_limit Metal1 -block_ring_top_layer_limit Metal11 -block_ring_bottom_layer_limit Metal1 -use_wire_group 0 -snap_wire_center_to_grid None
+globalNetConnect VDD -type pgpin -pin VDD -inst *
+globalNetConnect VDD -type tiehi -instanceBasename *
+globalNetConnect VSS -type pgpin -pin VSS -inst *
+globalNetConnect VSS -type tielo -instanceBasename *
+createPGPin VDD -net VDD -geom Metal10 20 0 22 12
+createPGPin VSS -net VSS -geom Metal11 26 0 28 6
+editPowerVia -top_layer Metal11 -area {20 9 22 12} -add_vias 1 -bottom_layer Metal10
+setSrouteMode -viaConnectToShape { noshape }
+sroute -connect { blockPin padPin padRing corePin floatingStripe } -layerChangeRange { Metal1(1) Metal11(11) } -blockPinTarget { nearestTarget } -padPinPortConnect { allPort oneGeom } -padPinTarget { nearestTarget } -corePinTarget { firstAfterRowEnd } -floatingStripeTarget { blockring padring ring stripe ringpin blockpin followpin } -allowJogging 1 -crossoverViaLayerRange { Metal1(1) Metal11(11) } -nets { VDD VSS } -allowLayerChange 1 -blockPin useLef -targetViaLayerRange { Metal1(1) Metal11(11) }
+setRouteMode -earlyGlobalHonorMsvRouteConstraint false -earlyGlobalRoutePartitionPinGuide true
+setEndCapMode -reset
+setEndCapMode -boundary_tap false
+setNanoRouteMode -quiet -droutePostRouteSpreadWire 1
+setNanoRouteMode -quiet -droutePostRouteWidenWireRule LEFSpecialRouteSpec
+setNanoRouteMode -quiet -timingEngine {}
+setUsefulSkewMode -maxSkew false -noBoundary false -useCells {DLY4X4 DLY4X1 DLY3X4 DLY3X1 DLY2X4 DLY2X1 DLY1X4 DLY1X1 CLKBUFX8 CLKBUFX6 CLKBUFX4 CLKBUFX3 CLKBUFX20 CLKBUFX2 CLKBUFX16 CLKBUFX12 BUFX8 BUFX6 BUFX4 BUFX3 BUFX20 BUFX2 BUFX16 BUFX12 INVXL INVX8 INVX6 INVX4 INVX3 INVX20 INVX2 INVX16 INVX12 INVX1 CLKINVX8 CLKINVX6 CLKINVX4 CLKINVX3 CLKINVX20 CLKINVX2 CLKINVX16 CLKINVX12 CLKINVX1} -maxAllowedDelay 1
+setPlaceMode -reset
+setPlaceMode -congEffort auto -timingDriven 1 -clkGateAware 1 -powerDriven 0 -ignoreScan 1 -reorderScan 1 -ignoreSpare 0 -placeIOPins 1 -moduleAwareSpare 0 -preserveRouting 1 -rmAffectedRouting 0 -checkRoute 0 -swapEEQ 0
+setRouteMode -earlyGlobalHonorMsvRouteConstraint false -earlyGlobalRoutePartitionPinGuide true
+setEndCapMode -reset
+setEndCapMode -boundary_tap false
+setUsefulSkewMode -maxSkew false -noBoundary false -useCells {BUFX12 BUFX16 BUFX2 BUFX20 BUFX3 BUFX4 BUFX6 BUFX8 CLKBUFX12 CLKBUFX16 CLKBUFX2 CLKBUFX20 CLKBUFX3 CLKBUFX4 CLKBUFX6 CLKBUFX8 DLY1X1 DLY1X4 DLY2X1 DLY2X4 DLY3X1 DLY3X4 DLY4X1 DLY4X4 CLKINVX1 CLKINVX12 CLKINVX16 CLKINVX2 CLKINVX20 CLKINVX3 CLKINVX4 CLKINVX6 CLKINVX8 INVX1 INVX12 INVX16 INVX2 INVX20 INVX3 INVX4 INVX6 INVX8 INVXL} -maxAllowedDelay 1
+setOptMode -effort high -powerEffort high -leakageToDynamicRatio 1 -reclaimArea true -simplifyNetlist true -allEndPoints false -setupTargetSlack 0 -holdTargetSlack 0 -maxDensity 0.95 -drcMargin 0 -usefulSkew true
+setRouteMode -earlyGlobalHonorMsvRouteConstraint false -earlyGlobalRoutePartitionPinGuide true
+setEndCapMode -reset
+setEndCapMode -boundary_tap false
+setUsefulSkewMode -maxSkew false -noBoundary false -useCells {DLY4X4 DLY4X1 DLY3X4 DLY3X1 DLY2X4 DLY2X1 DLY1X4 DLY1X1 CLKBUFX8 CLKBUFX6 CLKBUFX4 CLKBUFX3 CLKBUFX20 CLKBUFX2 CLKBUFX16 CLKBUFX12 BUFX8 BUFX6 BUFX4 BUFX3 BUFX20 BUFX2 BUFX16 BUFX12 INVXL INVX8 INVX6 INVX4 INVX3 INVX20 INVX2 INVX16 INVX12 INVX1 CLKINVX8 CLKINVX6 CLKINVX4 CLKINVX3 CLKINVX20 CLKINVX2 CLKINVX16 CLKINVX12 CLKINVX1} -maxAllowedDelay 1
+setDesignMode -process 45
+getPlaceMode
+place_opt_design
+report_power > ex2.2_step_12_innovus_power.txt
+report_timing > ex2.2_step_12_innovus_timing.txt
+report_area > ex2.2_step_12_innovus_area.txt
+checkPlace picorv32.checkPlace
+setDrawView place
+fit
+setLayerPreference allM2 -isVisible 0
+setLayerPreference allM2Cont -isVisible 0
+setLayerPreference allM3Cont -isVisible 0
+setLayerPreference allM4Cont -isVisible 1
+setLayerPreference allM5Cont -isVisible 1
+setLayerPreference allM6Cont -isVisible 1
+setLayerPreference allM7Cont -isVisible 1
+setLayerPreference allM8Cont -isVisible 1
+setLayerPreference allM9Cont -isVisible 1
+setLayerPreference allM10Cont -isVisible 1
+setLayerPreference allM11Cont -isVisible 1
+setLayerPreference allM12Cont -isVisible 1
+setLayerPreference allM2 -isVisible 1
+setLayerPreference allM2Cont -isVisible 1
+setLayerPreference allM3Cont -isVisible 1
+setLayerPreference allM4Cont -isVisible 1
+setLayerPreference allM5Cont -isVisible 1
+setLayerPreference allM6Cont -isVisible 1
+setLayerPreference allM7Cont -isVisible 1
+setLayerPreference allM8Cont -isVisible 1
+setLayerPreference allM9Cont -isVisible 1
+setLayerPreference allM10Cont -isVisible 1
+setLayerPreference allM11Cont -isVisible 1
+setLayerPreference allM12Cont -isVisible 1
+setLayerPreference allM2 -isVisible 0
+setLayerPreference allM2Cont -isVisible 0
+setLayerPreference allM3Cont -isVisible 0
+setLayerPreference allM4Cont -isVisible 1
+setLayerPreference allM5Cont -isVisible 1
+setLayerPreference allM6Cont -isVisible 1
+setLayerPreference allM7Cont -isVisible 1
+setLayerPreference allM8Cont -isVisible 1
+setLayerPreference allM9Cont -isVisible 1
+setLayerPreference allM10Cont -isVisible 1
+setLayerPreference allM11Cont -isVisible 1
+setLayerPreference allM12Cont -isVisible 1
+setLayerPreference allM2 -isVisible 1
+setLayerPreference allM2Cont -isVisible 1
+setLayerPreference allM3Cont -isVisible 1
+setLayerPreference allM4Cont -isVisible 1
+setLayerPreference allM5Cont -isVisible 1
+setLayerPreference allM6Cont -isVisible 1
+setLayerPreference allM7Cont -isVisible 1
+setLayerPreference allM8Cont -isVisible 1
+setLayerPreference allM9Cont -isVisible 1
+setLayerPreference allM10Cont -isVisible 1
+setLayerPreference allM11Cont -isVisible 1
+setLayerPreference allM12Cont -isVisible 1
+setLayerPreference allM2 -isVisible 0
+setLayerPreference allM2Cont -isVisible 0
+setLayerPreference allM3Cont -isVisible 0
+setLayerPreference allM4Cont -isVisible 1
+setLayerPreference allM5Cont -isVisible 1
+setLayerPreference allM6Cont -isVisible 1
+setLayerPreference allM7Cont -isVisible 1
+setLayerPreference allM8Cont -isVisible 1
+setLayerPreference allM9Cont -isVisible 1
+setLayerPreference allM10Cont -isVisible 1
+setLayerPreference allM11Cont -isVisible 1
+setLayerPreference allM12Cont -isVisible 1
+setLayerPreference allM2 -isVisible 1
+setLayerPreference allM2Cont -isVisible 1
+setLayerPreference allM3Cont -isVisible 1
+setLayerPreference allM4Cont -isVisible 1
+setLayerPreference allM5Cont -isVisible 1
+setLayerPreference allM6Cont -isVisible 1
+setLayerPreference allM7Cont -isVisible 1
+setLayerPreference allM8Cont -isVisible 1
+setLayerPreference allM9Cont -isVisible 1
+setLayerPreference allM10Cont -isVisible 1
+setLayerPreference allM11Cont -isVisible 1
+setLayerPreference allM12Cont -isVisible 1
+setLayerPreference allM2 -isVisible 0
+setLayerPreference allM2Cont -isVisible 0
+setLayerPreference allM3Cont -isVisible 0
+setLayerPreference allM4Cont -isVisible 1
+setLayerPreference allM5Cont -isVisible 1
+setLayerPreference allM6Cont -isVisible 1
+setLayerPreference allM7Cont -isVisible 1
+setLayerPreference allM8Cont -isVisible 1
+setLayerPreference allM9Cont -isVisible 1
+setLayerPreference allM10Cont -isVisible 1
+setLayerPreference allM11Cont -isVisible 1
+setLayerPreference allM12Cont -isVisible 1
+setLayerPreference allM2 -isVisible 1
+setLayerPreference allM2Cont -isVisible 1
+setLayerPreference allM3Cont -isVisible 1
+setLayerPreference allM4Cont -isVisible 1
+setLayerPreference allM5Cont -isVisible 1
+setLayerPreference allM6Cont -isVisible 1
+setLayerPreference allM7Cont -isVisible 1
+setLayerPreference allM8Cont -isVisible 1
+setLayerPreference allM9Cont -isVisible 1
+setLayerPreference allM10Cont -isVisible 1
+setLayerPreference allM11Cont -isVisible 1
+setLayerPreference allM12Cont -isVisible 1
+setLayerPreference allM2 -isVisible 0
+setLayerPreference allM2Cont -isVisible 0
+setLayerPreference allM3Cont -isVisible 0
+setLayerPreference allM4Cont -isVisible 1
+setLayerPreference allM5Cont -isVisible 1
+setLayerPreference allM6Cont -isVisible 1
+setLayerPreference allM7Cont -isVisible 1
+setLayerPreference allM8Cont -isVisible 1
+setLayerPreference allM9Cont -isVisible 1
+setLayerPreference allM10Cont -isVisible 1
+setLayerPreference allM11Cont -isVisible 1
+setLayerPreference allM12Cont -isVisible 1
+setLayerPreference allM2 -isVisible 1
+setLayerPreference allM2Cont -isVisible 1
+setLayerPreference allM3Cont -isVisible 1
+setLayerPreference allM4Cont -isVisible 1
+setLayerPreference allM5Cont -isVisible 1
+setLayerPreference allM6Cont -isVisible 1
+setLayerPreference allM7Cont -isVisible 1
+setLayerPreference allM8Cont -isVisible 1
+setLayerPreference allM9Cont -isVisible 1
+setLayerPreference allM10Cont -isVisible 1
+setLayerPreference allM11Cont -isVisible 1
+setLayerPreference allM12Cont -isVisible 1
+setLayerPreference allM2 -isVisible 0
+setLayerPreference allM2Cont -isVisible 0
+setLayerPreference allM3Cont -isVisible 0
+setLayerPreference allM4Cont -isVisible 1
+setLayerPreference allM5Cont -isVisible 1
+setLayerPreference allM6Cont -isVisible 1
+setLayerPreference allM7Cont -isVisible 1
+setLayerPreference allM8Cont -isVisible 1
+setLayerPreference allM9Cont -isVisible 1
+setLayerPreference allM10Cont -isVisible 1
+setLayerPreference allM11Cont -isVisible 1
+setLayerPreference allM12Cont -isVisible 1
+setLayerPreference allM2 -isVisible 1
+setLayerPreference allM2Cont -isVisible 1
+setLayerPreference allM3Cont -isVisible 1
+setLayerPreference allM4Cont -isVisible 1
+setLayerPreference allM5Cont -isVisible 1
+setLayerPreference allM6Cont -isVisible 1
+setLayerPreference allM7Cont -isVisible 1
+setLayerPreference allM8Cont -isVisible 1
+setLayerPreference allM9Cont -isVisible 1
+setLayerPreference allM10Cont -isVisible 1
+setLayerPreference allM11Cont -isVisible 1
+setLayerPreference allM12Cont -isVisible 1
+setLayerPreference allM2 -isVisible 0
+setLayerPreference allM2Cont -isVisible 0
+setLayerPreference allM3Cont -isVisible 0
+setLayerPreference allM4Cont -isVisible 1
+setLayerPreference allM5Cont -isVisible 1
+setLayerPreference allM6Cont -isVisible 1
+setLayerPreference allM7Cont -isVisible 1
+setLayerPreference allM8Cont -isVisible 1
+setLayerPreference allM9Cont -isVisible 1
+setLayerPreference allM10Cont -isVisible 1
+setLayerPreference allM11Cont -isVisible 1
+setLayerPreference allM12Cont -isVisible 1
+setLayerPreference allM2 -isVisible 1
+setLayerPreference allM2Cont -isVisible 1
+setLayerPreference allM3Cont -isVisible 1
+setLayerPreference allM4Cont -isVisible 1
+setLayerPreference allM5Cont -isVisible 1
+setLayerPreference allM6Cont -isVisible 1
+setLayerPreference allM7Cont -isVisible 1
+setLayerPreference allM8Cont -isVisible 1
+setLayerPreference allM9Cont -isVisible 1
+setLayerPreference allM10Cont -isVisible 1
+setLayerPreference allM11Cont -isVisible 1
+setLayerPreference allM12Cont -isVisible 1
+setLayerPreference allM2 -isVisible 0
+setLayerPreference allM2Cont -isVisible 0
+setLayerPreference allM3Cont -isVisible 0
+setLayerPreference allM4Cont -isVisible 1
+setLayerPreference allM5Cont -isVisible 1
+setLayerPreference allM6Cont -isVisible 1
+setLayerPreference allM7Cont -isVisible 1
+setLayerPreference allM8Cont -isVisible 1
+setLayerPreference allM9Cont -isVisible 1
+setLayerPreference allM10Cont -isVisible 1
+setLayerPreference allM11Cont -isVisible 1
+setLayerPreference allM12Cont -isVisible 1
+setLayerPreference allM2 -isVisible 1
+setLayerPreference allM2Cont -isVisible 1
+setLayerPreference allM3Cont -isVisible 1
+setLayerPreference allM4Cont -isVisible 1
+setLayerPreference allM5Cont -isVisible 1
+setLayerPreference allM6Cont -isVisible 1
+setLayerPreference allM7Cont -isVisible 1
+setLayerPreference allM8Cont -isVisible 1
+setLayerPreference allM9Cont -isVisible 1
+setLayerPreference allM10Cont -isVisible 1
+setLayerPreference allM11Cont -isVisible 1
+setLayerPreference allM12Cont -isVisible 1
+setLayerPreference violation -isVisible 1
+violationBrowser -all -no_display_false -displayByLayer
+zoomBox 83.745 210.805 86.455 214.225
+zoomBox 83.745 210.805 86.455 214.225
+zoomBox 83.745 210.805 86.455 214.225
+::Rda_Browser::VB::violationBrowserSetObjs
+zoomBox 117.945 20.995 120.655 24.415
+zoomBox 117.945 20.995 120.655 24.415
+zoomBox 117.945 20.995 120.655 24.415
+::Rda_Browser::VB::violationBrowserSetObjs
+zoomBox 170.745 75.715 173.455 79.135
+zoomBox 170.745 75.715 173.455 79.135
+zoomBox 170.745 75.715 173.455 79.135
+::Rda_Browser::VB::violationBrowserSetObjs
+zoomBox 170.145 72.295 172.855 75.715
+zoomBox 170.145 72.295 172.855 75.715
+zoomBox 170.145 72.295 172.855 75.715
+zoomBox 170.145 72.295 172.855 75.715
+::Rda_Browser::VB::violationBrowserSetObjs
+zoomBox 193.345 41.515 196.055 44.935
+zoomBox 193.345 41.515 196.055 44.935
+zoomBox 193.345 41.515 196.055 44.935
+::Rda_Browser::VB::violationBrowserSetObjs
+zoomBox 156.545 50.065 159.255 53.485
+zoomBox 156.545 50.065 159.255 53.485
+zoomBox 156.545 50.065 159.255 53.485
+::Rda_Browser::VB::violationBrowserSetObjs
+zoomBox 105.345 180.025 108.055 183.445
+zoomBox 105.345 180.025 108.055 183.445
+zoomBox 105.345 180.025 108.055 183.445
+::Rda_Browser::VB::violationBrowserSetObjs
+zoomBox 92.745 84.265 95.455 87.685
+zoomBox 92.745 84.265 95.455 87.685
+zoomBox 92.745 84.265 95.455 87.685
+::Rda_Browser::VB::violationBrowserSetObjs
+zoomBox 100.545 92.815 103.255 96.235
+zoomBox 100.545 92.815 103.255 96.235
+zoomBox 100.545 92.815 103.255 96.235
+::Rda_Browser::VB::violationBrowserSetObjs
+zoomBox 97.545 149.245 100.255 152.665
+zoomBox 97.545 149.245 100.255 152.665
+zoomBox 97.545 149.245 100.255 152.665
+::Rda_Browser::VB::violationBrowserSetObjs
+zoomBox 131.945 147.535 134.655 150.955
+zoomBox 131.945 147.535 134.655 150.955
+zoomBox 131.945 147.535 134.655 150.955
+::Rda_Browser::VB::violationBrowserSetObjs
+zoomBox 142.945 111.625 145.655 115.045
+zoomBox 142.945 111.625 145.655 115.045
+zoomBox 142.945 111.625 145.655 115.045
+::Rda_Browser::VB::violationBrowserSetObjs
+zoomBox 138.345 127.015 141.055 130.435
+zoomBox 138.345 127.015 141.055 130.435
+zoomBox 138.345 127.015 141.055 130.435
+::Rda_Browser::VB::violationBrowserSetObjs
+zoomBox 107.145 128.725 109.855 132.145
+zoomBox 107.145 128.725 109.855 132.145
+zoomBox 107.145 128.725 109.855 132.145
+::Rda_Browser::VB::violationBrowserSetObjs
+zoomBox 138.345 121.885 141.055 125.305
+zoomBox 138.345 121.885 141.055 125.305
+zoomBox 138.345 121.885 141.055 125.305
+::Rda_Browser::VB::violationBrowserSetObjs
+zoomBox 89.345 58.615 92.055 62.035
+zoomBox 89.345 58.615 92.055 62.035
+zoomBox 89.345 58.615 92.055 62.035
+::Rda_Browser::VB::violationBrowserSetObjs
+zoomBox 79.945 205.675 82.655 209.095
+zoomBox 79.945 205.675 82.655 209.095
+zoomBox 79.945 205.675 82.655 209.095
+::Rda_Browser::VB::violationBrowserSetObjs
+zoomBox 206.745 62.035 209.455 65.455
+zoomBox 206.745 62.035 209.455 65.455
+zoomBox 206.745 62.035 209.455 65.455
+::Rda_Browser::VB::violationBrowserSetObjs
+violationBrowserClose
+fit
+refinePlace -checkRoute 0 -preserveRouting 1 -rmAffectedRouting 0 -swapEEQ 0
+setRouteMode -earlyGlobalMinRouteLayer 1 -earlyGlobalMaxRouteLayer 11 -earlyGlobalHonorMsvRouteConstraint false -earlyGlobalRoutePartitionPinGuide true
+earlyGlobalRoute
+reportCongestion -hotSpot
+setRouteMode -earlyGlobalMinRouteLayer 2 -earlyGlobalMaxRouteLayer 10 -earlyGlobalHonorMsvRouteConstraint false -earlyGlobalRoutePartitionPinGuide true
+earlyGlobalRoute
+reportCongestion -hotSpot
+add_ndr -width {Metal1 0.12 Metal2 0.16 Metal3 0.16 Metal4 0.16 Metal5 0.16 Metal6 0.16 Metal7 0.16 Metal8 0.16 Metal9 0.16 Metal10 0.44 Metal11 0.44 } -spacing {Metal1 0.12 Metal2 0.14 Metal3 0.14 Metal4 0.14 Metal5 0.14 Metal6 0.14 Metal7 0.14 Metal8 0.14 Metal9 0.14 Metal10 0.4 Metal11 0.4 } -name NDRSTEP13
+create_route_type -top_preferred_layer Metal9 -bottom_preferred_layer Metal7 -non_default_rule NDRSTEP13 -name STEP13
+set_ccopt_property target_skew 0.1
+set_ccopt_property target_max_trans 0.15
+ccopt_design
+create_ccopt_clock_tree_spec -file step14sel46pdf
+optDesign -postCTS
+report_ccopt_clock_trees > ex2.2report_ccopt_clock_trees_vima14.txt
+report_ccopt_skew_groups > ex2.2report_ccopt_skew_groups_vima14.txt
+report_power > ex2.2report_power_vima14.txt
+report_area > ex2.2report_area_vima14.txt
+report_timing > ex2.2report_timing_vima14.txt
+getCTSMode -engine -quiet
+ctd_win -id ctd_window
+setRouteMode -earlyGlobalHonorMsvRouteConstraint false -earlyGlobalRoutePartitionPinGuide true
+setEndCapMode -reset
+setEndCapMode -boundary_tap false
+setNanoRouteMode -quiet -drouteUseMultiCutViaEffort medium
+setUsefulSkewMode -maxSkew false -noBoundary false -useCells {BUFX12 BUFX16 BUFX2 BUFX20 BUFX3 BUFX4 BUFX6 BUFX8 CLKBUFX12 CLKBUFX16 CLKBUFX2 CLKBUFX20 CLKBUFX3 CLKBUFX4 CLKBUFX6 CLKBUFX8 DLY1X1 DLY1X4 DLY2X1 DLY2X4 DLY3X1 DLY3X4 DLY4X1 DLY4X4 CLKINVX1 CLKINVX12 CLKINVX16 CLKINVX2 CLKINVX20 CLKINVX3 CLKINVX4 CLKINVX6 CLKINVX8 INVX1 INVX12 INVX16 INVX2 INVX20 INVX3 INVX4 INVX6 INVX8 INVXL} -maxAllowedDelay 1
+setRouteMode -earlyGlobalHonorMsvRouteConstraint false -earlyGlobalRoutePartitionPinGuide true
+setEndCapMode -reset
+setEndCapMode -boundary_tap false
+setUsefulSkewMode -maxSkew false -noBoundary false -useCells {DLY4X4 DLY4X1 DLY3X4 DLY3X1 DLY2X4 DLY2X1 DLY1X4 DLY1X1 CLKBUFX8 CLKBUFX6 CLKBUFX4 CLKBUFX3 CLKBUFX20 CLKBUFX2 CLKBUFX16 CLKBUFX12 BUFX8 BUFX6 BUFX4 BUFX3 BUFX20 BUFX2 BUFX16 BUFX12 INVXL INVX8 INVX6 INVX4 INVX3 INVX20 INVX2 INVX16 INVX12 INVX1 CLKINVX8 CLKINVX6 CLKINVX4 CLKINVX3 CLKINVX20 CLKINVX2 CLKINVX16 CLKINVX12 CLKINVX1} -maxAllowedDelay 1
+setNanoRouteMode -quiet -routeWithTimingDriven 1
+setNanoRouteMode -quiet -routeWithSiDriven 1
+setNanoRouteMode -quiet -routeTopRoutingLayer default
+setNanoRouteMode -quiet -routeBottomRoutingLayer default
+setNanoRouteMode -quiet -drouteEndIteration default
+setNanoRouteMode -quiet -routeWithTimingDriven true
+setNanoRouteMode -quiet -routeWithSiDriven true
+routeDesign -globalDetail
+optDesign -postRoute -setup -hold
+report_power > ex2.2report_power_vima15.txt
+report_area > ex2.2report_area_vima15.txt
+report_timing > ex2.2report_timing_vima15.txt
+setLayerPreference violation -isVisible 1
+violationBrowser -all -no_display_false -displayByLayer
+zoomBox 170.745 75.715 173.455 79.135
+zoomBox 170.745 75.715 173.455 79.135
+zoomBox 170.745 75.715 173.455 79.135
+::Rda_Browser::VB::violationBrowserSetObjs
+zoomBox 83.745 210.805 86.455 214.225
+zoomBox 83.745 210.805 86.455 214.225
+zoomBox 83.745 210.805 86.455 214.225
+::Rda_Browser::VB::violationBrowserSetObjs
+zoomBox 170.145 72.295 172.855 75.715
+zoomBox 170.145 72.295 172.855 75.715
+zoomBox 170.145 72.295 172.855 75.715
+::Rda_Browser::VB::violationBrowserSetObjs
+zoomBox 193.345 41.515 196.055 44.935
+zoomBox 193.345 41.515 196.055 44.935
+zoomBox 193.345 41.515 196.055 44.935
+::Rda_Browser::VB::violationBrowserSetObjs
+zoomBox 156.545 50.065 159.255 53.485
+zoomBox 156.545 50.065 159.255 53.485
+zoomBox 156.545 50.065 159.255 53.485
+::Rda_Browser::VB::violationBrowserSetObjs
+zoomBox 89.545 85.975 92.255 89.395
+zoomBox 89.545 85.975 92.255 89.395
+zoomBox 89.545 85.975 92.255 89.395
+::Rda_Browser::VB::violationBrowserSetObjs
+zoomBox 100.545 92.815 103.255 96.235
+zoomBox 100.545 92.815 103.255 96.235
+zoomBox 100.545 92.815 103.255 96.235
+::Rda_Browser::VB::violationBrowserSetObjs
+zoomBox 97.545 149.245 100.255 152.665
+zoomBox 97.545 149.245 100.255 152.665
+zoomBox 97.545 149.245 100.255 152.665
+::Rda_Browser::VB::violationBrowserSetObjs
+zoomBox 131.945 147.535 134.655 150.955
+zoomBox 131.945 147.535 134.655 150.955
+zoomBox 131.945 147.535 134.655 150.955
+::Rda_Browser::VB::violationBrowserSetObjs
+zoomBox 142.945 111.625 145.655 115.045
+zoomBox 142.945 111.625 145.655 115.045
+zoomBox 142.945 111.625 145.655 115.045
+::Rda_Browser::VB::violationBrowserSetObjs
+zoomBox 138.345 127.015 141.055 130.435
+zoomBox 138.345 127.015 141.055 130.435
+zoomBox 138.345 127.015 141.055 130.435
+::Rda_Browser::VB::violationBrowserSetObjs
+zoomBox 107.145 128.725 109.855 132.145
+zoomBox 107.145 128.725 109.855 132.145
+zoomBox 107.145 128.725 109.855 132.145
+::Rda_Browser::VB::violationBrowserSetObjs
+zoomBox 138.345 121.885 141.055 125.305
+zoomBox 138.345 121.885 141.055 125.305
+zoomBox 138.345 121.885 141.055 125.305
+::Rda_Browser::VB::violationBrowserSetObjs
+zoomBox 89.345 58.615 92.055 62.035
+zoomBox 89.345 58.615 92.055 62.035
+zoomBox 89.345 58.615 92.055 62.035
+::Rda_Browser::VB::violationBrowserSetObjs
+zoomBox 79.945 205.675 82.655 209.095
+zoomBox 79.945 205.675 82.655 209.095
+zoomBox 79.945 205.675 82.655 209.095
+::Rda_Browser::VB::violationBrowserSetObjs
+zoomBox 206.745 62.035 209.455 65.455
+zoomBox 206.745 62.035 209.455 65.455
+zoomBox 206.745 62.035 209.455 65.455
+::Rda_Browser::VB::violationBrowserSetObjs
+zoomBox 79.945 205.675 82.655 209.095
+zoomBox 79.945 205.675 82.655 209.095
+zoomBox 89.345 58.615 92.055 62.035
+zoomBox 138.345 121.885 141.055 125.305
+zoomBox 138.345 121.885 141.055 125.305
+zoomBox 138.345 121.885 141.055 125.305
+zoomBox 107.145 128.725 109.855 132.145
+zoomBox 138.345 127.015 141.055 130.435
+zoomBox 142.945 111.625 145.655 115.045
+zoomBox 142.945 111.625 145.655 115.045
+zoomBox 142.945 111.625 145.655 115.045
+zoomBox 142.945 111.625 145.655 115.045
+zoomBox 131.945 147.535 134.655 150.955
+panPage 0 1
+zoomBox 97.545 149.245 100.255 152.665
+zoomBox 97.545 149.245 100.255 152.665
+zoomBox 97.545 149.245 100.255 152.665
+violationBrowserHide -tool CheckPlace
+zoomBox 97.545 149.245 100.255 152.665
+violationBrowserClose
+fit
+zoomBox -185.00650 20.19450 332.43400 203.05850
+zoomBox -163.22050 32.57400 276.60400 188.00850
+zoomBox -240.79200 -11.50550 475.39150 241.59450
+zoomBox -144.70400 43.09600 229.14800 175.21550
+zoomBox -75.33850 66.55600 154.25450 147.69450
+selectInst {cpuregs_reg[30][7]}
+deselectAll
+selectWire 37.8600 99.4250 37.9400 104.2550 4 n_2490
+deselectAll
+fit
+saveDesign innovus_picorv32_ex2.2_vima15
